@@ -40,7 +40,7 @@ export const LanguageSwitcher = ({ className, size = 'sm' }: Props) => {
         role="radiogroup"
         aria-label={t('common.lang_label') ?? 'Language'}
         className={cn(
-          'relative inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/[0.04] p-1 backdrop-blur-md',
+          'relative inline-flex items-center gap-1 rounded-full border border-chrome/10 bg-chrome/[0.04] p-1 backdrop-blur-md',
           className,
         )}
       >

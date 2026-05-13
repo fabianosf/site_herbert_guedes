@@ -45,7 +45,7 @@ export const Research = () => {
               key={line.index}
               variants={fadeUp}
               whileHover={{ y: -4, transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] } }}
-              className="group/card relative overflow-hidden rounded-2xl border border-white/5 glass-card p-8 md:p-10"
+              className="group/card relative overflow-hidden rounded-2xl border border-chrome/5 glass-card p-8 md:p-10"
             >
               <div
                 aria-hidden="true"
@@ -55,7 +55,7 @@ export const Research = () => {
                 <span className="font-mono text-xs uppercase tracking-[0.25em] text-bone-400">
                   {line.index}
                 </span>
-                <span className="h-px w-12 bg-white/10" aria-hidden="true" />
+                <span className="h-px w-12 bg-chrome/10" aria-hidden="true" />
               </header>
               <h3 className="mt-6 text-2xl font-semibold text-bone-50 md:text-3xl">
                 {line.title}
@@ -65,7 +65,7 @@ export const Research = () => {
                 {line.tags.map((tag) => (
                   <li
                     key={tag}
-                    className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs text-bone-200"
+                    className="rounded-full border border-chrome/10 bg-chrome/[0.03] px-3 py-1 text-xs text-bone-200"
                   >
                     {tag}
                   </li>

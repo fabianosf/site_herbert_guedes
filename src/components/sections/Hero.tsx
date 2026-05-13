@@ -37,8 +37,8 @@ export const Hero = () => {
                 aria-hidden="true"
                 className="absolute inset-0 -m-6 rounded-full bg-nebula-violet/20 blur-2xl"
               />
-              <div className="relative grid h-24 w-24 place-items-center rounded-full bg-gradient-to-br from-nebula-violet via-nebula-indigo to-ink-900 ring-1 ring-white/10 md:h-28 md:w-28">
-                <svg viewBox="0 0 64 64" className="h-12 w-12 text-white/90" aria-hidden="true">
+              <div className="relative grid h-24 w-24 place-items-center rounded-full bg-gradient-to-br from-nebula-violet via-nebula-indigo to-ink-900 ring-1 ring-chrome/10 md:h-28 md:w-28">
+                <svg viewBox="0 0 64 64" className="h-12 w-12 text-chrome/90" aria-hidden="true">
                   <circle cx="32" cy="32" r="14" fill="currentColor" opacity="0.95" />
                   <circle cx="46" cy="20" r="1.4" fill="currentColor" opacity="0.9" />
                   <circle cx="18" cy="22" r="1" fill="currentColor" opacity="0.75" />
@@ -57,7 +57,7 @@ export const Hero = () => {
 
           <motion.div
             variants={fadeUp}
-            className="mt-12 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-bone-300"
+            className="mt-12 inline-flex items-center gap-3 rounded-full border border-chrome/10 bg-chrome/[0.03] px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-bone-300"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-nebula-cyan animate-pulse" aria-hidden="true" />
             {t('hero.eyebrow')}
@@ -86,7 +86,7 @@ export const Hero = () => {
                   href={a.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs font-medium tracking-wide text-bone-200 transition-colors hover:border-accent/60 hover:text-accent"
+                  className="rounded-full border border-chrome/10 bg-chrome/[0.04] px-4 py-1.5 text-xs font-medium tracking-wide text-bone-200 transition-colors hover:border-accent/60 hover:text-accent"
                 >
                   {a.label}
                 </a>

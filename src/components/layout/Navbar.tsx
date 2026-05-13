@@ -7,6 +7,7 @@ import { Container } from '../ui/Container';
 import { LinkButton } from '../ui/LinkButton';
 import { LocalizedLink } from '../../router/LocalizedLink';
 import { LanguageSwitcher } from '../i18n/LanguageSwitcher';
+import { ThemeToggle } from '../ui/ThemeToggle';
 import { cn } from '../../lib/cn';
 
 export const Navbar = () => {
@@ -32,7 +33,7 @@ export const Navbar = () => {
       className={cn(
         'fixed inset-x-0 top-0 z-40 transition-all duration-500 ease-smooth',
         scrolled
-          ? 'glass border-b border-white/10 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.5)]'
+          ? 'glass border-b border-chrome/10 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.5)]'
           : 'border-b border-transparent bg-transparent',
       )}
     >
@@ -48,9 +49,9 @@ export const Navbar = () => {
           >
             <span
               aria-hidden="true"
-              className="relative grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-nebula-violet via-nebula-indigo to-ink-900 ring-1 ring-white/10"
+              className="relative grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-nebula-violet via-nebula-indigo to-ink-900 ring-1 ring-chrome/10"
             >
-              <span className="h-3.5 w-3.5 rounded-full bg-white/85" />
+              <span className="h-3.5 w-3.5 rounded-full bg-chrome/85" />
             </span>
             <span className="text-base font-semibold tracking-tight">
               <span className="font-light">{t('site.brand.prefix')}</span>
@@ -72,6 +73,7 @@ export const Navbar = () => {
           </ul>
 
           <div className="hidden items-center gap-3 md:flex">
+            <ThemeToggle />
             <LanguageSwitcher />
             <LinkButton section="contact" size="sm">
               {t('nav.contact_cta')}
@@ -101,7 +103,7 @@ export const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-            className="md:hidden glass border-t border-white/10"
+            className="md:hidden glass border-t border-chrome/10"
           >
             <Container size="full">
               <ul className="flex flex-col gap-1 py-6">
@@ -110,14 +112,17 @@ export const Navbar = () => {
                     <LocalizedLink
                       section={item.key}
                       onClick={() => setOpen(false)}
-                      className="block rounded-lg px-3 py-3 text-lg text-bone-100 hover:bg-white/[0.04]"
+                      className="block rounded-lg px-3 py-3 text-lg text-bone-100 hover:bg-chrome/[0.04]"
                     >
                       {t(`nav.${item.key}`)}
                     </LocalizedLink>
                   </li>
                 ))}
                 <li className="flex items-center justify-between gap-3 pt-4">
-                  <LanguageSwitcher />
+                  <div className="flex items-center gap-2">
+                    <ThemeToggle />
+                    <LanguageSwitcher />
+                  </div>
                   <LinkButton section="contact" onClick={() => setOpen(false)}>
                     {t('nav.contact_cta')}
                   </LinkButton>

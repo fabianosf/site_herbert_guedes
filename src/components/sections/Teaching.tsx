@@ -34,7 +34,7 @@ export const Teaching = () => {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="divide-y divide-white/5 border-y border-white/5"
+          className="divide-y divide-chrome/5 border-y border-chrome/5"
         >
           {items.map((item, i) => (
             <motion.li key={item.title} variants={fadeUp} className="group/row py-8 md:py-10">

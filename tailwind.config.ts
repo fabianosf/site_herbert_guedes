@@ -22,21 +22,25 @@ const config: Config = {
     },
     extend: {
       colors: {
+        // Surface scale (semantic: 950 = page bg, ascending = elevated). Theme-aware via CSS vars.
         ink: {
-          950: '#06060d',
-          900: '#0a0a14',
-          800: '#11111e',
-          700: '#1b1a2b',
-          600: '#2a283f',
-          500: '#3b3955',
+          950: 'rgb(var(--ink-950) / <alpha-value>)',
+          900: 'rgb(var(--ink-900) / <alpha-value>)',
+          800: 'rgb(var(--ink-800) / <alpha-value>)',
+          700: 'rgb(var(--ink-700) / <alpha-value>)',
+          600: 'rgb(var(--ink-600) / <alpha-value>)',
+          500: 'rgb(var(--ink-500) / <alpha-value>)',
         },
+        // Text scale (50 = strongest, 400 = muted). Theme-aware.
         bone: {
-          50: '#f7f7fb',
-          100: '#eeeef4',
-          200: '#d8d8e3',
-          300: '#a4a4b8',
-          400: '#747489',
+          50: 'rgb(var(--bone-50) / <alpha-value>)',
+          100: 'rgb(var(--bone-100) / <alpha-value>)',
+          200: 'rgb(var(--bone-200) / <alpha-value>)',
+          300: 'rgb(var(--bone-300) / <alpha-value>)',
+          400: 'rgb(var(--bone-400) / <alpha-value>)',
         },
+        // Subtle contrast color (replaces `white/X` so it also works in light mode).
+        chrome: 'rgb(var(--chrome) / <alpha-value>)',
         accent: {
           DEFAULT: '#8b6dff',
           soft: '#6f54e0',

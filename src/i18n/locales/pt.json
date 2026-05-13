@@ -21,7 +21,9 @@
     "menu_close": "Fechar menu",
     "home_aria": "GuedesLab — Início",
     "primary": "Primária",
-    "lang_label": "Idioma"
+    "lang_label": "Idioma",
+    "theme_to_light": "Mudar para tema claro",
+    "theme_to_dark": "Mudar para tema escuro"
   },
   "hero": {
     "eyebrow": "Laboratório de pesquisa · INCA · FIOCRUZ",

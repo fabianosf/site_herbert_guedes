@@ -3,8 +3,48 @@
 @tailwind utilities;
 
 @layer base {
+  /* -------------------------------------------------------------------
+   *  Theme tokens. Same Tailwind classes (bg-ink-950, text-bone-100,
+   *  chrome/10, etc.) work for both themes - only these vars change.
+   * ------------------------------------------------------------------- */
   :root {
+    color-scheme: light;
+    /* surfaces (light) */
+    --ink-950: 247 247 251;
+    --ink-900: 240 240 246;
+    --ink-800: 228 228 238;
+    --ink-700: 210 210 224;
+    --ink-600: 170 170 190;
+    --ink-500: 120 120 140;
+    /* text (light) */
+    --bone-50:  16 16 22;
+    --bone-100: 26 26 34;
+    --bone-200: 50 50 64;
+    --bone-300: 86 86 102;
+    --bone-400: 116 116 134;
+    /* low-contrast chromatic accent */
+    --chrome: 12 10 30;
+    /* glass surfaces */
+    --glass-bg:        rgba(255, 255, 255, 0.55);
+    --glass-card-bg:   rgba(255, 255, 255, 0.6);
+  }
+
+  .dark {
     color-scheme: dark;
+    --ink-950: 6 6 13;
+    --ink-900: 10 10 20;
+    --ink-800: 17 17 30;
+    --ink-700: 27 26 43;
+    --ink-600: 42 40 63;
+    --ink-500: 59 57 85;
+    --bone-50:  247 247 251;
+    --bone-100: 238 238 244;
+    --bone-200: 216 216 227;
+    --bone-300: 164 164 184;
+    --bone-400: 116 116 137;
+    --chrome: 255 255 255;
+    --glass-bg:      rgba(10, 10, 20, 0.55);
+    --glass-card-bg: rgba(17, 17, 30, 0.5);
   }
 
   html {
@@ -17,6 +57,8 @@
 
   body {
     @apply bg-ink-950 text-bone-100 font-sans selection:bg-accent selection:text-ink-950;
+    transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     overflow-x: hidden;
   }
 
@@ -34,7 +76,6 @@
     @apply bg-ink-600;
   }
 
-  /* Focus ring -- accessible and on-brand */
   *:focus-visible {
     @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-ink-950;
   }
@@ -106,13 +147,13 @@
     mask-image: linear-gradient(to bottom, black 70%, transparent);
   }
   .glass {
-    background-color: rgb(10 10 20 / 0.55);
+    background-color: var(--glass-bg);
     backdrop-filter: blur(18px) saturate(140%);
     -webkit-backdrop-filter: blur(18px) saturate(140%);
-    border-color: rgb(255 255 255 / 0.06);
+    border-color: rgb(var(--chrome) / 0.06);
   }
   .glass-card {
-    background-color: rgb(17 17 30 / 0.5);
+    background-color: var(--glass-card-bg);
     backdrop-filter: blur(14px) saturate(130%);
     -webkit-backdrop-filter: blur(14px) saturate(130%);
   }

@@ -48,7 +48,7 @@ export const Members = () => {
                 key={`${m.name}-${i}`}
                 variants={fadeUp}
                 whileHover={{ y: -6, transition: { duration: 0.45, ease: [0.16, 1, 0.3, 1] } }}
-                className="group/m relative overflow-hidden rounded-2xl border border-white/5 glass-card p-6 md:p-8"
+                className="group/m relative overflow-hidden rounded-2xl border border-chrome/5 glass-card p-6 md:p-8"
               >
                 <div
                   className={cn(
@@ -59,7 +59,7 @@ export const Members = () => {
                 />
 
                 <div className="relative flex items-center gap-4">
-                  <div className="grid h-14 w-14 place-items-center rounded-full bg-white/[0.05] ring-1 ring-white/10 font-mono text-base text-bone-50">
+                  <div className="grid h-14 w-14 place-items-center rounded-full bg-chrome/[0.05] ring-1 ring-chrome/10 font-mono text-base text-bone-50">
                     {slot.initials}
                   </div>
                   <div>
@@ -76,7 +76,7 @@ export const Members = () => {
                 <div className="relative mt-6 flex items-center justify-between">
                   <span
                     aria-hidden="true"
-                    className="h-px flex-1 bg-gradient-to-r from-white/10 via-white/5 to-transparent"
+                    className="h-px flex-1 bg-gradient-to-r from-chrome/10 via-chrome/5 to-transparent"
                   />
                   <span className="ml-4 text-xs text-bone-400 transition-colors group-hover/m:text-accent">
                     {t('members.profile')} →

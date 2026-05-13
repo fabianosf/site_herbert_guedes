@@ -33,7 +33,7 @@ export const Awards = () => {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="rounded-2xl border border-white/5 glass-card divide-y divide-white/5 p-6 md:p-8"
+          className="rounded-2xl border border-chrome/5 glass-card divide-y divide-chrome/5 p-6 md:p-8"
         >
           {items.map((p) => (
             <motion.li

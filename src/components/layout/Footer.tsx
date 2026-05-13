@@ -9,7 +9,7 @@ export const Footer = () => {
   const { email, socials, nav } = siteConfig;
 
   return (
-    <footer className="relative overflow-hidden border-t border-white/5 bg-ink-950">
+    <footer className="relative overflow-hidden border-t border-chrome/5 bg-ink-950">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 -top-16 mx-auto h-24 w-3/4 rounded-full bg-nebula-violet/15 blur-3xl"
@@ -62,7 +62,7 @@ export const Footer = () => {
             </FooterColumn>
           </div>
 
-          <div className="mt-20 flex flex-col items-start justify-between gap-4 border-t border-white/5 pt-8 text-xs text-bone-400 sm:flex-row sm:items-center">
+          <div className="mt-20 flex flex-col items-start justify-between gap-4 border-t border-chrome/5 pt-8 text-xs text-bone-400 sm:flex-row sm:items-center">
             <p>{t('footer.rights', { year })}</p>
             <p className="font-mono uppercase tracking-[0.25em]">{t('site.location')}</p>
           </div>
