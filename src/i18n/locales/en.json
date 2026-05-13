@@ -1,0 +1,173 @@
+{
+  "site": {
+    "name": "GuedesLab",
+    "brand": { "prefix": "Guedes", "suffix": "Lab" },
+    "location": "Rio de Janeiro · Brazil",
+    "tagline": "Immunology · Immunotherapy · Biotechnology",
+    "description": "Research lab led by Dr. Herbert Guedes. Immunology, cancer immunotherapy and applications of biotechnology in health. INCA · FIOCRUZ."
+  },
+  "nav": {
+    "home": "Home",
+    "members": "Members",
+    "research": "Research",
+    "teaching": "Teaching",
+    "media": "Media",
+    "awards": "Awards",
+    "contact_cta": "Contact"
+  },
+  "common": {
+    "skip_to_content": "Skip to content",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu",
+    "home_aria": "GuedesLab — Home",
+    "primary": "Primary",
+    "lang_label": "Language"
+  },
+  "hero": {
+    "eyebrow": "Research laboratory · INCA · FIOCRUZ",
+    "title": "The Lab",
+    "body_1": "Led by Dr. Herbert Guedes, GuedesLab focuses primarily on studies in immunology, cancer immunotherapy and applications of biotechnology in health.",
+    "body_2": "Our projects are linked to INCA and FIOCRUZ. At INCA, we operate in the Cellular and Gene Immunotherapy Laboratory / Cell and Gene Therapy Program / Research Coordination. At FIOCRUZ, we participate in the FioCâncer program across its scientific and educational initiatives.",
+    "affiliations_label": "Institutional affiliations",
+    "cta_primary": "Meet the team",
+    "cta_secondary": "Research lines"
+  },
+  "research": {
+    "section": {
+      "index": "01",
+      "eyebrow": "Research",
+      "title_a": "Investigation lines that",
+      "title_b": "merge basic and translational science.",
+      "description": "Four complementary fronts — from bench to clinic — affiliated with INCA and FIOCRUZ."
+    },
+    "items": [
+      {
+        "index": "01",
+        "title": "Cellular Immunotherapy",
+        "description": "T-cell engineering (CAR-T) and adoptive therapy strategies targeting solid and hematological tumors.",
+        "tags": ["CAR-T", "Adoptive Transfer", "Onco-immunology"]
+      },
+      {
+        "index": "02",
+        "title": "Gene Therapy",
+        "description": "Lentiviral vectors, gene editing and transfer platforms for translational applications.",
+        "tags": ["Lentivirus", "CRISPR", "Vectorology"]
+      },
+      {
+        "index": "03",
+        "title": "Tumor Immunology",
+        "description": "Characterization of the tumor microenvironment and immune escape mechanisms in pre-clinical models.",
+        "tags": ["TME", "Immune Escape", "In vivo models"]
+      },
+      {
+        "index": "04",
+        "title": "Health Biotechnology",
+        "description": "Development of biotech platforms with translation potential for public-health systems.",
+        "tags": ["Bioproducts", "Translation", "Public Health"]
+      }
+    ]
+  },
+  "members": {
+    "section": {
+      "index": "02",
+      "eyebrow": "Members",
+      "title_a": "A team that thinks",
+      "title_b": "as a single organism.",
+      "description": "Lean structure with researchers, postdocs, graduate students and undergraduates."
+    },
+    "items": [
+      { "name": "Dr. Herbert Guedes", "role": "Coordinator", "focus": "PI · Immunotherapy" },
+      { "name": "Senior Researcher", "role": "Associate Researcher", "focus": "CAR-T · Solid Tumors" },
+      { "name": "Postdoctoral Researcher", "role": "Postdoc", "focus": "Gene Editing" },
+      { "name": "PhD Candidate", "role": "PhD", "focus": "Tumor Microenvironment" },
+      { "name": "MSc Candidate", "role": "Master's", "focus": "Vectorology" },
+      { "name": "Undergraduate", "role": "Undergraduate Research", "focus": "Basic Immunology" }
+    ],
+    "profile": "Profile"
+  },
+  "teaching": {
+    "section": {
+      "index": "03",
+      "eyebrow": "Teaching",
+      "title_a": "Academic training in",
+      "title_b": "immunology and biotechnology.",
+      "description": "Mentoring in graduate programs and undergraduate research."
+    },
+    "items": [
+      {
+        "level": "INCA",
+        "title": "Graduate · Oncology",
+        "description": "Master's and PhD mentoring at the Oncology Graduate Program."
+      },
+      {
+        "level": "FIOCRUZ",
+        "title": "Graduate · Cellular & Molecular Biology",
+        "description": "PGBCM mentoring with a focus on immunotherapy and translational biotech."
+      },
+      {
+        "level": "Undergraduate",
+        "title": "Undergraduate Research",
+        "description": "Occasional openings for undergraduates interested in experimental immunology."
+      }
+    ]
+  },
+  "media": {
+    "section": {
+      "index": "04",
+      "eyebrow": "Media",
+      "title_a": "Visibility for",
+      "title_b": "scientific work."
+    },
+    "items": [
+      { "outlet": "Jornal Nacional", "title": "National advances in CAR-T therapy", "year": "2024" },
+      { "outlet": "Agência Fiocruz", "title": "Immunotherapy research in Brazil", "year": "2024" },
+      { "outlet": "Folha de S.Paulo", "title": "Brazilian science and cancer", "year": "2023" }
+    ]
+  },
+  "awards": {
+    "section": {
+      "index": "05",
+      "eyebrow": "Awards",
+      "title_a": "Recognition of",
+      "title_b": "our work."
+    },
+    "items": [
+      { "year": "2024", "title": "Recognition for biotech innovation", "org": "INCA / MS" },
+      { "year": "2023", "title": "Oncology research award", "org": "SBPC" },
+      { "year": "2022", "title": "Scientific highlight — cell therapy", "org": "FIOCRUZ" }
+    ]
+  },
+  "contact": {
+    "section": {
+      "index": "06",
+      "eyebrow": "Contact",
+      "title_a": "Collaborations, students &",
+      "title_b": "partnerships.",
+      "description_prefix": "Interested in internships, undergraduate research or proposing a collaboration? Email us at"
+    },
+    "form": {
+      "name": "Your name",
+      "email": "Email",
+      "company": "Institution (optional)",
+      "message": "How can we collaborate?",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "status_success": "Thank you — we received your message.",
+      "status_error": "Something went wrong. Please try again by email.",
+      "status_idle": "Your data is sanitized and never shared.",
+      "status_submitting": "Sending securely…",
+      "errors": {
+        "name_required": "Please enter your name.",
+        "email_invalid": "Please enter a valid email.",
+        "message_short": "Tell us a bit more (10+ characters).",
+        "form_rejected": "Submission rejected."
+      }
+    }
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "academic": "Academic",
+    "contact": "Contact",
+    "rights": "© {{year}} GuedesLab. All rights reserved."
+  }
+}

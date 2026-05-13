@@ -1,0 +1,173 @@
+{
+  "site": {
+    "name": "GuedesLab",
+    "brand": { "prefix": "Guedes", "suffix": "Lab" },
+    "location": "Rio de Janeiro · Brasil",
+    "tagline": "Imunologia · Imunoterapia · Biotecnologia",
+    "description": "Laboratório de pesquisa coordenado pelo Dr. Herbert Guedes. Imunologia, imunoterapia do câncer e aplicações da biotecnologia na saúde. INCA · FIOCRUZ."
+  },
+  "nav": {
+    "home": "Início",
+    "members": "Membros",
+    "research": "Pesquisa",
+    "teaching": "Ensino",
+    "media": "Na Mídia",
+    "awards": "Prêmios",
+    "contact_cta": "Contato"
+  },
+  "common": {
+    "skip_to_content": "Pular para o conteúdo",
+    "menu_open": "Abrir menu",
+    "menu_close": "Fechar menu",
+    "home_aria": "GuedesLab — Início",
+    "primary": "Primária",
+    "lang_label": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "Laboratório de pesquisa · INCA · FIOCRUZ",
+    "title": "O Laboratório",
+    "body_1": "Coordenado pelo Dr. Herbert Guedes, o GuedesLab se dedica majoritariamente a estudos nas áreas de imunologia, imunoterapia do câncer e aplicações da biotecnologia na saúde.",
+    "body_2": "Os projetos estão vinculados ao INCA e à FIOCRUZ. No INCA, atuamos no Laboratório de Imunoterapia Celular e Gênica / Programa de Terapia Celular e Gênica / Coordenação de Pesquisa. Na FIOCRUZ, integramos o programa FioCâncer em suas diferentes iniciativas científicas e educacionais.",
+    "affiliations_label": "Vínculos institucionais",
+    "cta_primary": "Conhecer a equipe",
+    "cta_secondary": "Linhas de pesquisa"
+  },
+  "research": {
+    "section": {
+      "index": "01",
+      "eyebrow": "Pesquisa",
+      "title_a": "Linhas de investigação que",
+      "title_b": "unem ciência básica e translação.",
+      "description": "Quatro frentes complementares — da bancada à clínica — com vínculo a INCA e FIOCRUZ."
+    },
+    "items": [
+      {
+        "index": "01",
+        "title": "Imunoterapia Celular",
+        "description": "Engenharia de células T (CAR-T) e estratégias de terapia adotiva voltadas a tumores sólidos e hematológicos.",
+        "tags": ["CAR-T", "Adoptive Transfer", "Onco-imunologia"]
+      },
+      {
+        "index": "02",
+        "title": "Terapia Gênica",
+        "description": "Vetores lentivirais, edição gênica e plataformas de transferência para aplicações translacionais.",
+        "tags": ["Lentivírus", "CRISPR", "Vetorologia"]
+      },
+      {
+        "index": "03",
+        "title": "Imunologia de Tumores",
+        "description": "Caracterização do microambiente tumoral e mecanismos de evasão imune em modelos pré-clínicos.",
+        "tags": ["TME", "Escape Imune", "Modelos in vivo"]
+      },
+      {
+        "index": "04",
+        "title": "Biotecnologia em Saúde",
+        "description": "Desenvolvimento de plataformas biotecnológicas com potencial de transferência para o SUS.",
+        "tags": ["Bioprodutos", "Translação", "SUS"]
+      }
+    ]
+  },
+  "members": {
+    "section": {
+      "index": "02",
+      "eyebrow": "Membros",
+      "title_a": "Uma equipe que pensa",
+      "title_b": "como um único organismo.",
+      "description": "Estrutura enxuta com pesquisadores, pós-doutorandos, alunos de pós-graduação e iniciação científica."
+    },
+    "items": [
+      { "name": "Dr. Herbert Guedes", "role": "Coordenador", "focus": "PI · Imunoterapia" },
+      { "name": "Pesquisador(a) Sênior", "role": "Pesquisador(a) Associado(a)", "focus": "CAR-T · Tumores Sólidos" },
+      { "name": "Pós-doutorando(a)", "role": "Pós-doutorado", "focus": "Edição Gênica" },
+      { "name": "Doutorando(a)", "role": "Doutorado", "focus": "Microambiente Tumoral" },
+      { "name": "Mestrando(a)", "role": "Mestrado", "focus": "Vetorologia" },
+      { "name": "IC / TCC", "role": "Iniciação Científica", "focus": "Imunologia Básica" }
+    ],
+    "profile": "Perfil"
+  },
+  "teaching": {
+    "section": {
+      "index": "03",
+      "eyebrow": "Ensino",
+      "title_a": "Formação acadêmica em",
+      "title_b": "imunologia e biotecnologia.",
+      "description": "Orientação em programas de pós-graduação e iniciação científica."
+    },
+    "items": [
+      {
+        "level": "INCA",
+        "title": "Pós-graduação · Oncologia",
+        "description": "Orientação de mestrado e doutorado no Programa de Pós-Graduação em Oncologia."
+      },
+      {
+        "level": "FIOCRUZ",
+        "title": "Pós-graduação · Biologia Celular e Molecular",
+        "description": "Orientação no PGBCM com foco em imunoterapia e biotecnologia translacional."
+      },
+      {
+        "level": "Graduação",
+        "title": "Iniciação Científica",
+        "description": "Vagas pontuais para alunos de graduação interessados em imunologia experimental."
+      }
+    ]
+  },
+  "media": {
+    "section": {
+      "index": "04",
+      "eyebrow": "Na Mídia",
+      "title_a": "Visibilidade para o",
+      "title_b": "trabalho científico."
+    },
+    "items": [
+      { "outlet": "Jornal Nacional", "title": "Avanços nacionais em terapia CAR-T", "year": "2024" },
+      { "outlet": "Agência Fiocruz", "title": "Pesquisa em imunoterapia no Brasil", "year": "2024" },
+      { "outlet": "Folha de S.Paulo", "title": "Ciência brasileira e o câncer", "year": "2023" }
+    ]
+  },
+  "awards": {
+    "section": {
+      "index": "05",
+      "eyebrow": "Prêmios",
+      "title_a": "Reconhecimento do",
+      "title_b": "nosso trabalho."
+    },
+    "items": [
+      { "year": "2024", "title": "Reconhecimento em inovação biotecnológica", "org": "INCA / MS" },
+      { "year": "2023", "title": "Prêmio de pesquisa em oncologia", "org": "SBPC" },
+      { "year": "2022", "title": "Destaque científico — terapia celular", "org": "FIOCRUZ" }
+    ]
+  },
+  "contact": {
+    "section": {
+      "index": "06",
+      "eyebrow": "Contato",
+      "title_a": "Colaborações, alunos &",
+      "title_b": "parcerias.",
+      "description_prefix": "Interessado em estagiar, fazer iniciação científica ou propor colaboração? Escreva para"
+    },
+    "form": {
+      "name": "Seu nome",
+      "email": "E-mail",
+      "company": "Instituição (opcional)",
+      "message": "Como podemos colaborar?",
+      "submit": "Enviar mensagem",
+      "submitting": "Enviando…",
+      "status_success": "Obrigado — recebemos sua mensagem.",
+      "status_error": "Algo deu errado. Tente novamente por e-mail.",
+      "status_idle": "Seus dados são sanitizados e nunca compartilhados.",
+      "status_submitting": "Enviando de forma segura…",
+      "errors": {
+        "name_required": "Por favor, informe seu nome.",
+        "email_invalid": "Por favor, informe um e-mail válido.",
+        "message_short": "Conte um pouco mais (10+ caracteres).",
+        "form_rejected": "Envio rejeitado."
+      }
+    }
+  },
+  "footer": {
+    "navigation": "Navegação",
+    "academic": "Acadêmico",
+    "contact": "Contato",
+    "rights": "© {{year}} GuedesLab. Todos os direitos reservados."
+  }
+}
