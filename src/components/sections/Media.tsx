@@ -4,6 +4,7 @@ import { Container } from '../ui/Container';
 import { SectionHeader } from '../ui/SectionHeader';
 import { fadeUp, stagger, viewportOnce } from '../../lib/motion';
 
+// TODO: preencher com aparições reais na mídia quando disponíveis
 type Item = { outlet: string; title: string; year: string };
 
 export const Media = () => {

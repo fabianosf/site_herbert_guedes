@@ -4,6 +4,7 @@ import { Container } from '../ui/Container';
 import { SectionHeader } from '../ui/SectionHeader';
 import { fadeUp, stagger, viewportOnce } from '../../lib/motion';
 
+// TODO: preencher com dados reais quando disponíveis (prêmios do Dr. Herbert Guedes)
 type Item = { year: string; title: string; org: string };
 
 export const Awards = () => {

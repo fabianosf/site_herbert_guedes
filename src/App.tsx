@@ -16,12 +16,17 @@ const Research = lazy(() =>
 const Teaching = lazy(() =>
   import('./components/sections/Teaching').then((m) => ({ default: m.Teaching })),
 );
-const Media = lazy(() =>
-  import('./components/sections/Media').then((m) => ({ default: m.Media })),
+const Publications = lazy(() =>
+  import('./components/sections/Publications').then((m) => ({ default: m.Publications })),
 );
-const Awards = lazy(() =>
-  import('./components/sections/Awards').then((m) => ({ default: m.Awards })),
-);
+// TODO: descomentar quando houver dados reais de mídia
+// const Media = lazy(() =>
+//   import('./components/sections/Media').then((m) => ({ default: m.Media })),
+// );
+// TODO: descomentar quando houver dados reais de prêmios
+// const Awards = lazy(() =>
+//   import('./components/sections/Awards').then((m) => ({ default: m.Awards })),
+// );
 const Contact = lazy(() =>
   import('./components/sections/Contact').then((m) => ({ default: m.Contact })),
 );
@@ -51,11 +56,10 @@ const SitePage = () => {
           <Teaching />
         </Suspense>
         <Suspense fallback={<SectionFallback />}>
-          <Media />
+          <Publications />
         </Suspense>
-        <Suspense fallback={<SectionFallback />}>
-          <Awards />
-        </Suspense>
+        {/* <Media /> — descomentar quando houver dados reais */}
+        {/* <Awards /> — descomentar quando houver dados reais */}
         <Suspense fallback={<SectionFallback />}>
           <Contact />
         </Suspense>

@@ -1,12 +1,18 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { siteConfig } from '../../config/theme';
+import { affiliationLogos } from '../../config/theme';
 import { Container } from '../ui/Container';
 import { LinkButton } from '../ui/LinkButton';
 import { fadeUp, stagger } from '../../lib/motion';
 
+const AFFILIATION_IDS = ['ufrj', 'fiocruz', 'ioc', 'microbiologia'];
+const LAB_IDS = ['libtec', 'lic'];
+
 export const Hero = () => {
   const { t } = useTranslation();
+
+  const affiliations = affiliationLogos.filter((l) => AFFILIATION_IDS.includes(l.id));
+  const labs = affiliationLogos.filter((l) => LAB_IDS.includes(l.id));
 
   return (
     <section
@@ -32,19 +38,19 @@ export const Hero = () => {
           className="mx-auto max-w-4xl text-center"
         >
           <motion.div variants={fadeUp} className="flex flex-col items-center">
-            <div className="relative">
-              <div
-                aria-hidden="true"
-                className="absolute inset-0 -m-6 rounded-full bg-nebula-violet/20 blur-2xl"
-              />
-              <div className="relative grid h-24 w-24 place-items-center rounded-full bg-gradient-to-br from-nebula-violet via-nebula-indigo to-ink-900 ring-1 ring-chrome/10 md:h-28 md:w-28">
-                <svg viewBox="0 0 64 64" className="h-12 w-12 text-chrome/90" aria-hidden="true">
-                  <circle cx="32" cy="32" r="14" fill="currentColor" opacity="0.95" />
-                  <circle cx="46" cy="20" r="1.4" fill="currentColor" opacity="0.9" />
-                  <circle cx="18" cy="22" r="1" fill="currentColor" opacity="0.75" />
-                  <circle cx="48" cy="44" r="0.9" fill="currentColor" opacity="0.7" />
-                </svg>
-              </div>
+            <div className="flex items-center gap-4">
+              {labs.map((lab) => (
+                <div
+                  key={lab.id}
+                  className="relative grid h-20 w-20 place-items-center rounded-2xl bg-chrome/[0.05] ring-1 ring-chrome/10 md:h-24 md:w-24 overflow-hidden"
+                >
+                  <img
+                    src={lab.src}
+                    alt={lab.name}
+                    className="h-full w-full object-contain p-2"
+                  />
+                </div>
+              ))}
             </div>
             <h1 className="mt-8 text-display-lg font-semibold tracking-tightest text-bone-50">
               <span className="font-light">{t('site.brand.prefix')}</span>
@@ -63,13 +69,6 @@ export const Hero = () => {
             {t('hero.eyebrow')}
           </motion.div>
 
-          <motion.h2
-            variants={fadeUp}
-            className="mt-8 font-display text-display-md font-light italic text-bone-50"
-          >
-            {t('hero.title')}
-          </motion.h2>
-
           <motion.div variants={fadeUp} className="mx-auto mt-8 max-w-2xl space-y-5 text-bone-300">
             <p className="text-pretty text-base md:text-lg leading-relaxed">{t('hero.body_1')}</p>
             <p className="text-pretty text-base md:text-lg leading-relaxed">{t('hero.body_2')}</p>
@@ -77,18 +76,24 @@ export const Hero = () => {
 
           <motion.ul
             variants={fadeUp}
-            className="mt-10 flex flex-wrap justify-center gap-2"
+            className="mt-10 flex flex-wrap justify-center gap-3"
             aria-label={t('hero.affiliations_label') ?? ''}
           >
-            {siteConfig.affiliations.map((a) => (
-              <li key={a.label}>
+            {affiliations.map((a) => (
+              <li key={a.id}>
                 <a
-                  href={a.href}
+                  href={a.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-chrome/10 bg-chrome/[0.04] px-4 py-1.5 text-xs font-medium tracking-wide text-bone-200 transition-colors hover:border-accent/60 hover:text-accent"
+                  className="flex items-center gap-2 rounded-full border border-chrome/10 bg-chrome/[0.04] px-4 py-1.5 text-xs font-medium tracking-wide text-bone-200 transition-colors hover:border-accent/60 hover:text-accent"
                 >
-                  {a.label}
+                  <img
+                    src={a.src}
+                    alt=""
+                    aria-hidden="true"
+                    className="h-4 w-4 rounded-sm object-contain"
+                  />
+                  {a.name}
                 </a>
               </li>
             ))}

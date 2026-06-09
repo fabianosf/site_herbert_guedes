@@ -3,16 +3,18 @@
     "name": "GuedesLab",
     "brand": { "prefix": "Guedes", "suffix": "Lab" },
     "location": "Rio de Janeiro · Brazil",
-    "tagline": "Immunology · Immunotherapy · Biotechnology",
-    "description": "Research lab led by Dr. Herbert Guedes. Immunology, cancer immunotherapy and applications of biotechnology in health. INCA · FIOCRUZ."
+    "tagline": "Immunology · Leishmaniasis · Vaccinology · Cell Therapy",
+    "description": "GuedesLab is coordinated by Prof. Dr. Herbert Leonel de Matos Guedes, head of the Libtec and LIC laboratories, affiliated with the Institute of Microbiology Paulo de Goés at UFRJ and the Oswaldo Cruz Institute (FIOCRUZ)."
   },
   "nav": {
     "home": "Home",
     "members": "Members",
     "research": "Research",
     "teaching": "Teaching",
-    "media": "Media",
+    "publications": "Publications",
+    "media": "In the Media",
     "awards": "Awards",
+    "contact": "Contact",
     "contact_cta": "Contact"
   },
   "common": {
@@ -25,99 +27,297 @@
     "theme_to_light": "Switch to light theme",
     "theme_to_dark": "Switch to dark theme"
   },
+  "lab": {
+    "title": "GuedesLab",
+    "subtitle": "Laboratory of ImunoBiotechnology (Libtec) and Clinical Immunology Laboratory (LIC)",
+    "description": "GuedesLab is coordinated by Prof. Dr. Herbert Leonel de Matos Guedes, head of the Libtec and LIC laboratories, affiliated with the Institute of Microbiology Paulo de Goés at UFRJ and the Oswaldo Cruz Institute (FIOCRUZ). Our research focuses on immunology of leishmaniasis, vaccinology, cell therapy and immunotherapy, pursuing new therapeutic and vaccine strategies against parasitic and fungal diseases.",
+    "libtec": "Laboratory of ImunoBiotechnology",
+    "lic": "Clinical Immunology Laboratory"
+  },
   "hero": {
-    "eyebrow": "Research laboratory · INCA · FIOCRUZ",
-    "title": "The Lab",
-    "body_1": "Led by Dr. Herbert Guedes, GuedesLab focuses primarily on studies in immunology, cancer immunotherapy and applications of biotechnology in health.",
-    "body_2": "Our projects are linked to INCA and FIOCRUZ. At INCA, we operate in the Cellular and Gene Immunotherapy Laboratory / Cell and Gene Therapy Program / Research Coordination. At FIOCRUZ, we participate in the FioCâncer program across its scientific and educational initiatives.",
+    "eyebrow": "UFRJ · FIOCRUZ / IOC · Institute of Microbiology Paulo de Goés",
+    "title": "GuedesLab",
+    "body_1": "Coordinated by Prof. Dr. Herbert Leonel de Matos Guedes, GuedesLab brings together two complementary laboratories — Libtec (Laboratory of ImunoBiotechnology) and LIC (Clinical Immunology Laboratory) — focusing on immunology of leishmaniasis, vaccinology, cell therapy and immunotherapy.",
+    "body_2": "Projects are affiliated with the Institute of Microbiology Paulo de Goés at UFRJ and the Oswaldo Cruz Institute (IOC / FIOCRUZ). The institutional partnership includes Prof. Dr. Alessandra Marcia da Fonseca Martins (UNIRIO).",
     "affiliations_label": "Institutional affiliations",
     "cta_primary": "Meet the team",
     "cta_secondary": "Research lines"
-  },
-  "research": {
-    "section": {
-      "index": "01",
-      "eyebrow": "Research",
-      "title_a": "Investigation lines that",
-      "title_b": "merge basic and translational science.",
-      "description": "Four complementary fronts — from bench to clinic — affiliated with INCA and FIOCRUZ."
-    },
-    "items": [
-      {
-        "index": "01",
-        "title": "Cellular Immunotherapy",
-        "description": "T-cell engineering (CAR-T) and adoptive therapy strategies targeting solid and hematological tumors.",
-        "tags": ["CAR-T", "Adoptive Transfer", "Onco-immunology"]
-      },
-      {
-        "index": "02",
-        "title": "Gene Therapy",
-        "description": "Lentiviral vectors, gene editing and transfer platforms for translational applications.",
-        "tags": ["Lentivirus", "CRISPR", "Vectorology"]
-      },
-      {
-        "index": "03",
-        "title": "Tumor Immunology",
-        "description": "Characterization of the tumor microenvironment and immune escape mechanisms in pre-clinical models.",
-        "tags": ["TME", "Immune Escape", "In vivo models"]
-      },
-      {
-        "index": "04",
-        "title": "Health Biotechnology",
-        "description": "Development of biotech platforms with translation potential for public-health systems.",
-        "tags": ["Bioproducts", "Translation", "Public Health"]
-      }
-    ]
   },
   "members": {
     "section": {
       "index": "02",
       "eyebrow": "Members",
-      "title_a": "A team that thinks",
-      "title_b": "as a single organism.",
-      "description": "Lean structure with researchers, postdocs, graduate students and undergraduates."
+      "title_a": "A team dedicated to",
+      "title_b": "impactful science.",
+      "description": "Professors, postdocs, PhD students, master's students and undergraduates in the Libtec and LIC laboratories."
     },
-    "items": [
-      { "name": "Dr. Herbert Guedes", "role": "Coordinator", "focus": "PI · Immunotherapy" },
-      { "name": "Senior Researcher", "role": "Associate Researcher", "focus": "CAR-T · Solid Tumors" },
-      { "name": "Postdoctoral Researcher", "role": "Postdoc", "focus": "Gene Editing" },
-      { "name": "PhD Candidate", "role": "PhD", "focus": "Tumor Microenvironment" },
-      { "name": "MSc Candidate", "role": "Master's", "focus": "Vectorology" },
-      { "name": "Undergraduate", "role": "Undergraduate Research", "focus": "Basic Immunology" }
-    ],
+    "title": "Members",
+    "subtitle": "Our multidisciplinary team",
+    "groups": {
+      "professors": "Professors",
+      "partner": "Partner",
+      "secretary": "Secretary",
+      "postdoc": "Postdoctoral researchers",
+      "phd": "PhD students",
+      "masters": "Master's students",
+      "undergrad": "Undergraduates / IC"
+    },
+    "labs": {
+      "libtec": "Libtec Researchers",
+      "lic": "LIC Researchers"
+    },
+    "roles": {
+      "coordinator": "Coordinator · Head of Laboratories",
+      "partner": "Professor · UNIRIO Partner",
+      "secretary": "Secretary",
+      "postdoc": "Postdoctoral Researcher",
+      "phd": "PhD Student",
+      "masters": "Master's Student",
+      "undergrad": "Undergraduate"
+    },
+    "people": {
+      "herbert-guedes": { "name": "Herbert Leonel de Matos Guedes", "title": "Prof. Dr.", "focus": "Immunology · Leishmaniasis · Vaccinology · Cell Therapy" },
+      "alessandra-martins": { "name": "Alessandra Marcia da Fonseca Martins", "title": "Prof. Dr.", "focus": "Immunology · Immunotherapy · PD-1/PD-L1" },
+      "amanda-lisboa": { "name": "Amanda Lisbôa Marinho da Silva", "title": "", "focus": "Laboratory administration and secretariat" },
+      "luan-cruz": { "name": "Luan Firmino Cruz", "title": "Dr.", "focus": "Sestrins · CD8 T lymphocyte senescence · Leishmania" },
+      "najara-rodrigues": { "name": "Najara Cavalcante Rodrigues", "title": "Dr.", "focus": "Second-generation vaccines with recombinant antigens against leishmaniasis" },
+      "gabriane-porcino": { "name": "Gabriane Nascimento Porcino", "title": "Dr.", "focus": "mRNA vaccine · Bispecific antibodies · Immunotherapy against Leishmaniasis" },
+      "federico-marsili": { "name": "Federico Francisco Marsili", "title": "Dr.", "focus": "Postdoctoral research in development" },
+      "alice-continentino": { "name": "Alice Lima Continentino", "title": "", "focus": "PI3k · mTOR · STAT3 · T cell exhaustion · Leishmania amazonensis" },
+      "igor-santos": { "name": "Igor Bittencourt dos Santos", "title": "", "focus": "Regulatory TCD8+ cells · Leishmania amazonensis" },
+      "hozany-araujo": { "name": "Hozany Praxedes dos Santos Araujo", "title": "", "focus": "Tγδ cells · IFN-γ · Cutaneous leishmaniasis" },
+      "naiara-manhaes": { "name": "Naiara Carla dos Santos Manhães", "title": "", "focus": "Dynamics between myeloid cells and T cells · Immune exhaustion" },
+      "douglas-almeida": { "name": "Douglas Barroso de Almeida", "title": "", "focus": "Extracellular vesicles from adipose tissue · Experimental cutaneous leishmaniasis" },
+      "alisson-rocha": { "name": "Alisson Amaral da Rocha", "title": "", "focus": "Anti-Leishmania vaccine strategy · Live-attenuated genetically modified parasites" },
+      "glauber-peixoto": { "name": "Glauber Araujo da Silva Peixoto", "title": "", "focus": "Recombinant antigens conjugated to flagellin · Intranasal immunization against Leishmania" },
+      "thalita-silva": { "name": "Thalita Soares Paixão do Couto e Silva", "title": "", "focus": "Immune response in murine model of Sporothrix brasiliensis" },
+      "guilherme-oliveira": { "name": "Guilherme dos Santos Marback D'Oliveira", "title": "", "focus": "Nociceptive mechanisms in Leishmania amazonensis infection" },
+      "giuliana-correa": { "name": "Giuliana Abreu da Costa Correa", "title": "", "focus": "Mechanism of efficacy of intranasal LaAg vaccine against leishmaniasis" },
+      "vinicius-souza": { "name": "Vinícius Fernandes de Souza", "title": "", "focus": "L. amazonensis parasites resistant to PF429242 · Sterol biosynthesis" },
+      "luna-ribeiro": { "name": "Luna Botelho dos Reis Ribeiro", "title": "", "focus": "Microbiota in adoptive breastfeeding/cohouse · Leishmania amazonensis" },
+      "caroline-araujo": { "name": "Caroline Camargo de Araújo", "title": "", "focus": "Role of cytokines IL-22 and IL-23 · Leishmania amazonensis in C57BL/6" },
+      "camila-fernandez": { "name": "Camila Nascimento Fernandez", "title": "", "focus": "Extracellular vesicles from mesenchymal stromal cells · Cutaneous leishmaniasis" },
+      "brunno-silva": { "name": "Brunno de Araújo Cesário da Silva", "title": "", "focus": "In training" },
+      "julia-nascimento": { "name": "Julia Caroline Santana Do Nascimento", "title": "", "focus": "Development of new anti-leishmaniasis vaccine candidates" },
+      "joao-duarte": { "name": "João Pedro de Paula Duarte", "title": "", "focus": "In training" },
+      "guilhermina-silva": { "name": "Guilhermina Fernandes Silva", "title": "", "focus": "Evaluation of Marizomib efficacy in L. braziliensis" },
+      "vinicius-cordeiro": { "name": "Vinicius Alexandre Cordeiro da Silva", "title": "", "focus": "Development of second-generation anti-leishmaniasis vaccines" },
+      "maria-luiza-silva": { "name": "Maria Luiza Andrade da Silva", "title": "", "focus": "In training" },
+      "vitoria-pinto": { "name": "Vitória Lopes da Silva Pinto", "title": "", "focus": "Intranasal KMP11 vaccine against visceral leishmaniasis" },
+      "julia-andrade": { "name": "Júlia Martins de Andrade", "title": "", "focus": "Checkpoint inhibitors · siRNA · Leishmaniasis treatment" },
+      "ana-luiza-pires": { "name": "Ana Luiza Nogueira de Oliveira Pires", "title": "", "focus": "Dynamics between myeloid cells and T cells in the exhaustion process" },
+      "kaylane-goes": { "name": "Kaylane Carvalho Góes", "title": "", "focus": "Leishmania co-infection · Cellular exhaustion response" },
+      "bianca-sa": { "name": "Bianca dos Santos de Sá", "title": "", "focus": "Intranasal administration of LaAg in golden hamsters against visceral leishmaniasis" },
+      "hanna-ribeiro": { "name": "Hanna Carolina Gomes Ribeiro", "title": "", "focus": "Immune response during Leishmania infantum infection in mice" }
+    },
     "profile": "Profile"
+  },
+  "research": {
+    "section": {
+      "index": "01",
+      "eyebrow": "Research",
+      "title_a": "Lines of investigation that",
+      "title_b": "bridge basic science and translation.",
+      "description": "Two complementary units — Libtec and LIC — focusing on immunology, vaccinology, cell therapy and parasitic biology."
+    },
+    "title": "Research",
+    "subtitle": "Scientific research lines",
+    "libtec_title": "Research lines — Libtec",
+    "lic_title": "Research lines — LIC",
+    "lines": {
+      "imunologia-basica": {
+        "index": "01",
+        "title": "Basic Immunology",
+        "description": "Fundamental immunological concepts and mechanisms in the context of infection and vaccination.",
+        "tags": ["T cells", "B cells", "Cytokines", "Innate immunity", "Adaptive immunity"],
+        "lab": "libtec"
+      },
+      "vacinologia": {
+        "index": "02",
+        "title": "Vaccinology",
+        "description": "Development, production and testing of new vaccine candidates against parasitic, fungal and viral infections, including intranasal and second-generation vaccines.",
+        "tags": ["LaAg", "Intranasal vaccine", "Adjuvants", "mRNA", "Leishmania", "Sporothrix"],
+        "lab": "libtec"
+      },
+      "biologia-celular-molecular": {
+        "index": "03",
+        "title": "Cell and Molecular Biology",
+        "description": "Study of cell structures, functions and operations at microscopic and molecular level, focusing on parasites and resistance mechanisms.",
+        "tags": ["Serine proteases", "CRISPR", "Drug resistance", "Sterol biosynthesis"],
+        "lab": "libtec"
+      },
+      "terapia-celular-imunoterapia": {
+        "index": "04",
+        "title": "Cell Therapy and Immunotherapy",
+        "description": "Use of extracellular vesicles, mesenchymal stromal cells and immunotherapeutic compounds to control leishmaniasis and other diseases.",
+        "tags": ["Extracellular vesicles", "Mesenchymal cells", "PD-1/PD-L1", "Checkpoint", "siRNA"],
+        "lab": "libtec"
+      },
+      "neuroimunologia": {
+        "index": "05",
+        "title": "Neuroimmunology",
+        "description": "Evaluation of nociception, pain and behavior in Leishmania amazonensis infection and neuro-immune interaction.",
+        "tags": ["Nociception", "Hyperalgesia", "IL-1β", "C57BL/6", "Leishmania amazonensis"],
+        "lab": "libtec"
+      },
+      "microbiologia": {
+        "index": "06",
+        "title": "Microbiology and Mycology",
+        "description": "Studies of microbiota influence on the course of Leishmania infections and immune response to fungal infections such as Sporothrix and Cryptococcus.",
+        "tags": ["Microbiota", "Sporothrix brasiliensis", "Cryptococcus", "TLR9", "Fungi"],
+        "lab": "libtec"
+      },
+      "farmacologia": {
+        "index": "07",
+        "title": "Pharmacology (Chemotherapy)",
+        "description": "Study of the efficacy of chemical substances and drugs against Leishmania species parasites, including protease inhibitors and antiparasitics.",
+        "tags": ["Marizomib", "PF-429242", "Protease inhibitors", "Leishmania braziliensis", "Leishmania infantum"],
+        "lab": "lic"
+      }
+    }
+  },
+  "publications": {
+    "section": {
+      "index": "03",
+      "eyebrow": "Publications",
+      "title_a": "Scientific output from the",
+      "title_b": "research group.",
+      "description": "Articles published in peer-reviewed international journals."
+    },
+    "title": "Publications",
+    "subtitle": "Scientific articles published by the group",
+    "recent": "Recent publications",
+    "viewAll": "View all publications",
+    "journal": "Journal",
+    "year": "Year",
+    "readArticle": "Read article",
+    "cta_doi": "View article",
+    "cta_pubmed": "View on PubMed",
+    "link_soon": "Link coming soon",
+    "page_prev": "Previous",
+    "page_next": "Next",
+    "items": {
+      "pub-2026-01": { "title": "Establishment of a transdermal infection model with Leishmania amazonensis", "authors": "Manhães NC, Praxedes H, Da-Rocha AA, et al., de Matos Guedes HL" },
+      "pub-2026-02": { "title": "Revisiting the past in light of current knowledge on γδ T cells in leishmaniasis", "authors": "Dos-Santos JS, de Matos Guedes HL" },
+      "pub-2025-01": { "title": "Efficacy of LaAg Vaccine Associated with Saponin Against Leishmania amazonensis Infection", "authors": "De Mello MF, Machado PA, Gomes PS, et al., de Matos Guedes HL" },
+      "pub-2025-02": { "title": "Leishmania amazonensis infection induces PD-L1 expression on dendritic cells and impairs Th1 responses in vitro and in vivo", "authors": "de Matos Guedes HL, da Fonseca-Martins AM, et al." },
+      "pub-2025-03": { "title": "Mice mucosal leishmaniasis model shown high parasite load, increased cytotoxicity and impaired IL-10+ T cell response", "authors": "Da-Rocha AA, Dos-Santos JS, De-Almeida DB, et al., de Matos Guedes HL" },
+      "pub-2025-04": { "title": "Exploring the in vitro and in vivo antileishmanial potential of Marizomib against Leishmania amazonensis and Leishmania infantum", "authors": "Machado PA, Gomes PS, et al., de Matos Guedes HL" },
+      "pub-2025-05": { "title": "Leishmania amazonensis infection induces IL1β-dependent hyperalgesia, while dampening mechanical allodynia in C57BL/6 mice", "authors": "Perez GG, De Lima EV, et al., De Matos Guedes HL" },
+      "pub-2024-01": { "title": "IL-17A/IFN-γ producing γδ T cell functional dichotomy impacts cutaneous leishmaniasis in mice", "authors": "Souza Dos-Santos J, Firmino-Cruz L, Da Fonseca-Martins AM, et al., de Matos Guedes HL" },
+      "pub-2024-02": { "title": "Intranasal delivery of LaAg vaccine improves immunity of aged mice against visceral leishmaniasis", "authors": "Salgado CL, Corea AFM, et al., Guedes HLDM" },
+      "pub-2024-03": { "title": "Potential of extracellular vesicles in the pathogenesis, diagnosis and therapy for parasitic diseases", "authors": "Pinheiro AAS, Torrecilhas AC, et al., Guedes HLDM" },
+      "pub-2023-01": { "title": "Crosslinked chitosan microparticles as a safe and efficient DNA carrier for intranasal vaccination against cutaneous leishmaniasis", "authors": "Costa Souza BLS, Pinto EF, et al., De Matos Guedes HL" },
+      "pub-2022-01": { "title": "Immunogenicity of SARS-CoV-2 Trimeric Spike Protein Associated to Poly(I:C) Plus Alum", "authors": "Dos-Santos JS, Firmino-Cruz L, et al., Guedes HLM" }
+    }
   },
   "teaching": {
     "section": {
-      "index": "03",
+      "index": "04",
       "eyebrow": "Teaching",
       "title_a": "Academic training in",
       "title_b": "immunology and biotechnology.",
-      "description": "Mentoring in graduate programs and undergraduate research."
+      "description": "Supervision in graduate programs and undergraduate research at UFRJ and FIOCRUZ."
     },
+    "title": "Teaching",
+    "subtitle": "Academic training and supervision",
     "items": [
-      {
-        "level": "INCA",
-        "title": "Graduate · Oncology",
-        "description": "Master's and PhD mentoring at the Oncology Graduate Program."
+      { "level": "UFRJ · IMPG", "title": "Graduate program · Microbiology", "description": "Supervision in the Graduate Program in Microbiology at the Institute of Microbiology Paulo de Goés, UFRJ." },
+      { "level": "FIOCRUZ · IOC", "title": "Graduate program · Parasitic Biology", "description": "Supervision at the Oswaldo Cruz Institute focusing on parasite immunology, vaccinology and infectious diseases." },
+      { "level": "Undergraduate", "title": "Scientific Initiation", "description": "Positions for undergraduates in experimental immunology, vaccinology and parasitic biology — with CNPq, FAPERJ and PIBIC funding." }
+    ],
+    "programs": {
+      "title": "Graduate Programs",
+      "ufrj": "UFRJ — Graduate Program in Microbiology (PPGM)",
+      "fiocruz": "FIOCRUZ — Graduate Program in Cell and Molecular Biology (PGBCM)",
+      "unirio": "UNIRIO — Partnership with Prof. Dr. Alessandra Martins"
+    },
+    "defended": {
+      "title": "Completed Research",
+      "subtitle": "Dissertations, theses and undergraduate work",
+      "level_labels": {
+        "graduation": "Undergraduate / IC",
+        "masters": "Master's",
+        "phd": "PhD"
       },
-      {
-        "level": "FIOCRUZ",
-        "title": "Graduate · Cellular & Molecular Biology",
-        "description": "PGBCM mentoring with a focus on immunotherapy and translational biotech."
-      },
-      {
-        "level": "Undergraduate",
-        "title": "Undergraduate Research",
-        "description": "Occasional openings for undergraduates interested in experimental immunology."
+      "items": {
+        "def-01": { "author": "Guilherme dos Santos Marback D'Oliveira", "title": "Mechanisms associated with nociceptive changes caused by Leishmania amazonensis infection in C57BL/6 mice", "level": "graduation", "area": "Neuroimmunology", "year": 2024, "funding": "FAPERJ" },
+        "def-02": { "author": "Giuliana Abreu da Costa Corrêa", "title": "Characterization of the efficacy mechanism of the intranasal LaAg vaccine against leishmaniasis", "level": "graduation", "area": "Immunology and vaccinology", "year": 2024, "funding": "FAPERJ" },
+        "def-03": { "author": "Igor Bittencourt dos Santos", "title": "Use of vitamin D3 as adjuvant for the LaAg vaccine", "level": "masters", "area": "Immunology and Inflammation", "year": 2024, "funding": "CAPES" },
+        "def-04": { "author": "Alisson Amaral da Rocha", "title": "Characterization of different nasal mucosa infection methods in BALB/c mice with Leishmania amazonensis", "level": "masters", "area": "Immunology and Inflammation", "year": 2024, "funding": "FAPERJ" },
+        "def-05": { "author": "Naiara Carla dos Santos Manhães", "title": "Establishment of a transdermal infection model with Leishmania amazonensis using microneedles", "level": "masters", "area": "Immunology and Inflammation", "year": 2025, "funding": "CAPES" },
+        "def-06": { "author": "Glauber Araujo da Silva Peixoto", "title": "Development of a 2nd Generation Intranasal Vaccine against Leishmania amazonensis infection", "level": "masters", "area": "Cell and Molecular Biology", "year": 2025, "funding": "CAPES" },
+        "def-07": { "author": "Luan Firmino Cruz", "title": "The role of B cells in immunity to infectious diseases and vaccines: IL-10 production, germinal center and neutralizing antibodies", "level": "phd", "area": "Immunology and Inflammation", "year": 2022, "funding": "CNPq / CAPES PrInt" },
+        "def-08": { "author": "Júlio Souza dos Santos", "title": "The role of γδ T lymphocytes in Leishmania amazonensis infection", "level": "phd", "area": "Immunology and Inflammation", "year": 2024, "funding": "CAPES / FAPERJ nota 10" },
+        "def-09": { "author": "Tadeu Diniz Ramos", "title": "New therapeutic strategies in leishmaniasis: cell therapies and antiparasitics", "level": "phd", "area": "Cell Therapy and Molecular Biology", "year": 2021, "funding": "CNPq" },
+        "def-10": { "author": "Alessandra Marcia da Fonseca Martins", "title": "Participation of PD-1/PD-L1 in susceptibility to Leishmania amazonensis infection and PD-L1 induction in neutrophils in vitro and in vivo", "level": "phd", "area": "Precision immunology", "year": 2020, "funding": "CNPq / FAPERJ nota 10" },
+        "def-11": { "author": "Diogo Oliveira Maciel", "title": "Development of new first and second generation vaccine strategies to combat Leishmaniasis", "level": "phd", "area": "Immunology and vaccinology", "year": 2023, "funding": "CNPq" },
+        "def-12": { "author": "Elias Barbosa da Silva Junior", "title": "The role of TLR9 in experimental infection by the fungus Cryptococcus gattii", "level": "phd", "area": "Immunology and Mycology", "year": 2023, "funding": "CNPq" },
+        "def-13": { "author": "Douglas Barroso de Almeida", "title": "Development of therapy against experimental Cutaneous Leishmaniasis using extracellular vesicles from mesenchymal stromal cells", "level": "masters", "area": "Cell Biology", "year": 2023, "funding": "CAPES" },
+        "def-14": { "author": "Vinícius Fernandes de Souza", "title": "Characterization of resistance mechanisms associated with serine protease inhibitors in Leishmania spp.", "level": "graduation", "area": "Cell Biology", "year": 2023, "funding": "PIBIC UFRJ" },
+        "def-15": { "author": "Gustavo Guadagnini Perez", "title": "Mechanisms associated with nociceptive changes caused by infection with Leishmania amazonensis in C57BL/6 mice", "level": "masters", "area": "Neuroimmunology", "year": 2023, "funding": "CAPES" },
+        "def-16": { "author": "Hozany Praxedes dos Santos Araujo", "title": "Dinâmica do centro germinativo e células B reguladoras na infecção por Leishmania amazonensis: perspectivas a partir de modelos de camundongos suscetíveis e parcialmente resistentes", "level": "masters", "area": "Imunologia e Inflamação", "year": 2025, "funding": "CAPES" },
+        "def-17": { "author": "Monique Pacheco Duarte Carneiro", "title": "Papel biológico da serino protease subtilisina em Leishmania mexicana", "level": "phd", "area": "Biologia Celular e Molecular", "year": 2026, "funding": "CNPq" },
+        "def-18": { "author": "Monique Pacheco Duarte Carneiro", "title": "A serino peptidase oligopeptidase B2 (OPB2) de Leishmania major influencia a diferenciação em promastigotas metacíclicas", "level": "masters", "area": "Biologia Celular e Molecular", "year": 2016, "funding": "CNPq" },
+        "def-19": { "author": "Elias Barbosa da Silva Junior", "title": "Análise da infecção experimental por Cryptococcus gattii e a contribuição do TLR9 na susceptibilidade em modelo de camundongos C57BL/6", "level": "masters", "area": "Imunologia e Micologia", "year": 2019, "funding": "CNPq" },
+        "def-20": { "author": "Elias Barbosa da Silva Junior", "title": "O papel do TLR9 na infecção experimental pelo fungo Cryptococcus gattii", "level": "phd", "area": "Imunologia e Micologia", "year": 2023, "funding": "CNPq" },
+        "def-21": { "author": "Eduardo Matheus Machado Vidal", "title": "O papel do inflamassomo na eficácia da vacina de mucosa antileishmaniose LaAg", "level": "masters", "area": "Imunologia e vacinologia", "year": 2024, "funding": "CAPES" },
+        "def-22": { "author": "Eduardo Matheus Machado Vidal", "title": "O papel do receptor NLRP3 e da CASP-1 na infecção por Leishmania amazonensis e na eficácia de vacina de mucosa anti-leishmaniose", "level": "graduation", "area": "Imunologia e vacinologia", "year": 2020, "funding": "PIBIC UFRJ" },
+        "def-23": { "author": "Luan Firmino Cruz", "title": "Papel imunomodulador dos linfócitos B na infecção experimental por Leishmania amazonensis", "level": "masters", "area": "Imunologia e Inflamação", "year": 2018, "funding": "CNPq" },
+        "def-24": { "author": "Luan Firmino Cruz", "title": "Avaliação de animais BALB/Xid em infecção por Leishmania amazonensis", "level": "graduation", "area": "Imunologia", "year": 2016, "funding": "CNPq" },
+        "def-25": { "author": "Júlio Souza dos Santos", "title": "Caracterização do camundongo Sv129 como um modelo susceptível à infecção por Leishmania amazonensis: participação de células T γδ", "level": "masters", "area": "Imunologia e Inflamação", "year": 2020, "funding": "CAPES/FAPERJ nota 10" },
+        "def-26": { "author": "Júlio Souza dos Santos", "title": "O papel do Receptor de Interferon do Tipo 1 (IFNR-1) na infecção por Leishmania amazonensis e na eficácia de vacina de mucosa anti-leishmaniose", "level": "graduation", "area": "Imunologia e vacinologia", "year": 2017, "funding": "CAPES" },
+        "def-27": { "author": "Pollyanna Stephanie Gomes", "title": "Inibição da biossíntese de hexosaminas e ativação de B-catenina como alvo terapêutico no tratamento da malária cerebral", "level": "phd", "area": "Imunologia e Parasitologia", "year": 2017, "funding": "UFRJ" },
+        "def-28": { "author": "Tadeu Diniz Ramos", "title": "O papel da fosfolipase A2 do grupo V na infecção por Leishmania amazonensis", "level": "graduation", "area": "Imunologia", "year": 2013, "funding": "Sem fomento" },
+        "def-29": { "author": "Tadeu Diniz Ramos", "title": "O emprego de células estromais mesenquimais como tratamento alternativo da infecção por Leishmania amazonensis", "level": "masters", "area": "Terapia celular", "year": 2017, "funding": "CNPq" },
+        "def-30": { "author": "Joyce Carvalho Pereira", "title": "O efeito do tratamento de célula tronco na infecção por Leishmania amazonensis", "level": "graduation", "area": "Imunologia e vacinologia", "year": 2014, "funding": "CAPES" },
+        "def-31": { "author": "Joyce Carvalho Pereira", "title": "O impacto da terapia com célula tronco mesenquimal (MSC) na infecção por Leishmania spp.", "level": "masters", "area": "Imunologia e Inflamação", "year": 2016, "funding": "CAPES" },
+        "def-32": { "author": "Alessandra Marcia da Fonseca Martins", "title": "O papel dos receptores PD-1/PD-L1 e o uso de imunoterapias com anti-PD-1 e anti-PD-L1 contra Leishmania amazonensis", "level": "masters", "area": "Imunologia de precisão", "year": 2017, "funding": "CAPES" },
+        "def-33": { "author": "Hozany Praxedes dos Santos Araujo", "title": "Avaliação do perfil fenotípico de linfócitos B na infecção por Leishmania amazonensis entre animais suscetíveis e parcialmente resistentes", "level": "graduation", "area": "Imunologia e Inflamação", "year": 2023, "funding": "PIBIC" },
+        "def-34": { "author": "Douglas Barroso de Almeida", "title": "Terapia com células estromais mesenquimais no tratamento de Leishmaniose Cutânea Experimental", "level": "graduation", "area": "Biologia celular", "year": 2021, "funding": "PIBIC UFRJ" },
+        "def-35": { "author": "Breno Teixeira Soares", "title": "Desenvolvimento de modelo de infecção para estudo de vacina utilizando Leishmania braziliensis", "level": "graduation", "area": "Parasitologia", "year": 2022, "funding": "PIBIC UFRJ" },
+        "def-36": { "author": "Gustavo Guadagnini Perez", "title": "A infecção por Leishmania amazonensis em camundongos C57BL/6 induz aumento de hipersensibilidade ao calor dependente de IL-1β", "level": "graduation", "area": "Neuroimunologia", "year": 2021, "funding": "FAPERJ" },
+        "def-37": { "author": "Juliana Elena Silveira Pratti", "title": "A participação do receptor Toll 9 na eficácia da vacina LaAg na infecção por Leishmania amazonensis", "level": "graduation", "area": "Farmácia", "year": 2016, "funding": "CNPq/FAPERJ" },
+        "def-38": { "author": "Diogo Oliveira Maciel", "title": "Estudo da associação dos adjuvantes CAF com a vacina LaAg contra a infecção por Leishmania amazonensis", "level": "graduation", "area": "Imunologia e vacinologia", "year": 2017, "funding": "PIBIC CNPq e FAPERJ" },
+        "def-39": { "author": "Diogo Oliveira Maciel", "title": "Avaliação de vacinas de Primeira Geração contra a infecção por Leishmania amazonensis", "level": "masters", "area": "Imunologia e vacinologia", "year": 2019, "funding": "CNPq" },
+        "def-40": { "author": "Gabriel Oliveira da Silva", "title": "Avaliação do desenvolvimento da leishmaniose cutânea em camundongos deficientes em vitamina D", "level": "graduation", "area": "Imunologia", "year": 2018, "funding": "FAPERJ" }
       }
-    ]
+    },
+    "ongoing": {
+      "title": "Ongoing Supervision",
+      "subtitle": "Researchers currently in training at the laboratory",
+      "items": {
+        "ong-01": { "author": "Guilherme dos Santos Marback D'Oliveira", "title": "Mecanismos associados às alterações nociceptivas causadas pela infecção por Leishmania amazonensis em camundongos C57BL/6", "level": "masters", "area": "Neuroimunologia", "funding": "IOC" },
+        "ong-02": { "author": "Giuliana Abreu da Costa Correa", "title": "Caracterização do mecanismo de eficácia da vacina intranasal LaAg contra a leishmaniose", "level": "masters", "area": "Imunologia e vacinologia", "funding": "CNPq" },
+        "ong-03": { "author": "Caroline Camargo de Araújo", "title": "O papel das citocinas IL-22 e IL-23 na infecção por Leishmania amazonensis em camundongos C57BL/6", "level": "graduation", "area": "Imunologia", "funding": "PIBIC CNPq" },
+        "ong-04": { "author": "Vinícius Fernandes de Souza", "title": "Desenvolvimento de parasitos L. amazonensis resistentes ao PF-429242 para investigar a participação da subtilisina na via de biossíntese de esteróis", "level": "masters", "area": "Biologia Celular e Molecular", "funding": "CAPES" },
+        "ong-05": { "author": "Lara Areias do Nascimento", "title": "Imunoterapia utilizando AgREC contra leishmaniose visceral murina", "level": "masters", "area": "Farmacologia e Imunologia", "funding": "IOC" },
+        "ong-06": { "author": "João Pedro de Paula Duarte", "title": "Projeto em definição", "level": "graduation", "area": "—", "funding": "PIBIC" },
+        "ong-07": { "author": "Alisson Amaral da Rocha", "title": "Desenvolvimento de uma estratégia vacinal anti-Leishmania empregando parasitos geneticamente modificados vivo-atenuados", "level": "phd", "area": "Imunologia, Vacinologia e Biologia Molecular", "funding": "CAPES / CNPq Sanduíche" },
+        "ong-08": { "author": "Igor Bittencourt dos Santos", "title": "Investigar o papel das células TCD8+ reguladoras na infecção por L. amazonensis", "level": "phd", "area": "Biologia Celular e Molecular", "funding": "IOC" },
+        "ong-09": { "author": "Glauber Araujo da Silva Peixoto", "title": "Produção, eficácia e mecanismo de antígenos recombinantes conjugados à flagelina na imunização intranasal contra Leishmania spp", "level": "phd", "area": "Biologia Celular e Molecular", "funding": "CAPES / IOC" },
+        "ong-10": { "author": "Camila Nascimento Fernandez", "title": "Avaliação do potencial terapêutico de vesículas extracelulares de células estromais mesenquimais em modelo de leishmaniose cutânea experimental", "level": "graduation", "area": "Imunologia", "funding": "PIBIC CNPq" },
+        "ong-11": { "author": "Luan Firmino Cruz", "title": "Papel das sestrinas na indução de senescência a linfócitos T CD8 em animais infectados por parasitos do gênero Leishmania", "level": "postdoc", "area": "Imunologia", "funding": "CNPq" },
+        "ong-12": { "author": "Guilhermina Fernandes Silva", "title": "Avaliação da eficácia do Marizomib em L. braziliensis", "level": "graduation", "area": "Quimioterapia", "funding": "PIBIC CNPq" },
+        "ong-13": { "author": "Luna Botelho dos Reis Ribeiro", "title": "Avaliação da microbiota na amamentação adotiva/cohouse na lesão por Leishmania amazonensis", "level": "graduation", "area": "Imunologia e Microbiologia", "funding": "CNPq" },
+        "ong-14": { "author": "Alice Lima Continentino", "title": "Avaliação do papel de PI3k, mTOR, STAT3, Arginase-1 e PD-L1 na indução de exaustão de células T durante a infecção experimental por Leishmania amazonensis", "level": "phd", "area": "Imunologia", "funding": "CAPES" },
+        "ong-15": { "author": "Hozany Praxedes dos Santos Araujo", "title": "Potencial terapêutico das células Tγδ produtoras de IFN-γ na leishmaniose cutânea", "level": "phd", "area": "Imunologia", "funding": "CAPES" },
+        "ong-16": { "author": "Douglas Barroso de Almeida", "title": "Mecanismos envolvidos no tratamento da Leishmaniose Cutânea experimental utilizando vesículas extracelulares provenientes de tecido adiposo", "level": "phd", "area": "Biologia Celular e Molecular", "funding": "CAPES" },
+        "ong-17": { "author": "Thalita Soares Paixão do Couto e Silva", "title": "Avaliação da resposta imunológica em modelo murino de infecção por Sporothrix brasiliensis", "level": "masters", "area": "Imunologia", "funding": "CAPES" },
+        "ong-18": { "author": "Najara Cavalcante Rodrigues", "title": "Desenvolvimento de vacinas de segunda geração com antígenos recombinantes contra leishmaniose", "level": "postdoc", "area": "Biologia Celular e Molecular", "funding": "CNPq" },
+        "ong-19": { "author": "Julia Caroline Santana Do Nascimento", "title": "Desenvolvimento de novos candidatos vacinais anti-leishmaniose", "level": "graduation", "area": "Biologia Celular e Molecular", "funding": "CNPq" },
+        "ong-20": { "author": "Naiara Carla dos Santos Manhães", "title": "Avaliação da dinâmica entre células mieloides e células T no processo de exaustão", "level": "phd", "area": "Imunologia", "funding": "CAPES" },
+        "ong-21": { "author": "Vinicius Alexandre Cordeiro da Silva", "title": "Desenvolvimento de vacinas de segunda geração antileishmaniose", "level": "graduation", "area": "Imunologia Aplicada e Biologia Molecular", "funding": "PIBITI FIOCRUZ" },
+        "ong-22": { "author": "Gabriane Nascimento Porcino", "title": "Vacina de mRNA e o uso de anticorpos biespecíficos como imunoterapia contra a Leishmaniose", "level": "postdoc", "area": "Imunologia e vacinologia", "funding": "CNPq" },
+        "ong-23": { "author": "Kaylane Carvalho Góes", "title": "Terapia contra inibidores de checkpoints empregando anticorpos biespecíficos e pequenos RNAs de interferência (siRNA) no tratamento da Leishmaniose", "level": "graduation", "area": "Imunologia", "funding": "CNPq" }
+      }
+    }
   },
   "media": {
     "section": {
-      "index": "04",
-      "eyebrow": "Media",
-      "title_a": "Visibility for",
+      "index": "05",
+      "eyebrow": "In the Media",
+      "title_a": "Visibility for the",
       "title_b": "scientific work."
     },
     "items": [
@@ -128,24 +328,24 @@
   },
   "awards": {
     "section": {
-      "index": "05",
+      "index": "06",
       "eyebrow": "Awards",
       "title_a": "Recognition of",
       "title_b": "our work."
     },
     "items": [
-      { "year": "2024", "title": "Recognition for biotech innovation", "org": "INCA / MS" },
+      { "year": "2024", "title": "Recognition in biotechnological innovation", "org": "INCA / MS" },
       { "year": "2023", "title": "Oncology research award", "org": "SBPC" },
       { "year": "2022", "title": "Scientific highlight — cell therapy", "org": "FIOCRUZ" }
     ]
   },
   "contact": {
     "section": {
-      "index": "06",
+      "index": "07",
       "eyebrow": "Contact",
       "title_a": "Collaborations, students &",
       "title_b": "partnerships.",
-      "description_prefix": "Interested in internships, undergraduate research or proposing a collaboration? Email us at"
+      "description_prefix": "Interested in an internship, undergraduate research or proposing a collaboration? Write to"
     },
     "form": {
       "name": "Your name",
@@ -159,12 +359,13 @@
       "status_idle": "Your data is sanitized and never shared.",
       "status_submitting": "Sending securely…",
       "errors": {
-        "name_required": "Please enter your name.",
-        "email_invalid": "Please enter a valid email.",
+        "name_required": "Please provide your name.",
+        "email_invalid": "Please provide a valid email.",
         "message_short": "Tell us a bit more (10+ characters).",
         "form_rejected": "Submission rejected."
       }
-    }
+    },
+    "affiliations_label": "Institutional support"
   },
   "footer": {
     "navigation": "Navigation",

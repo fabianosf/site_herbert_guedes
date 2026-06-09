@@ -5,6 +5,7 @@ export type SectionKey =
   | 'members'
   | 'research'
   | 'teaching'
+  | 'publications'
   | 'media'
   | 'awards'
   | 'contact';
@@ -14,6 +15,7 @@ export const SECTIONS: readonly SectionKey[] = [
   'members',
   'research',
   'teaching',
+  'publications',
   'media',
   'awards',
   'contact',
@@ -25,6 +27,7 @@ export const SECTION_TO_ID: Record<SectionKey, string> = {
   members: 'members',
   research: 'research',
   teaching: 'teaching',
+  publications: 'publications',
   media: 'media',
   awards: 'awards',
   contact: 'contact',
@@ -37,6 +40,7 @@ export const LOCALE_SLUGS: Record<SupportedLanguage, Record<SectionKey, string>>
     members: 'membros',
     research: 'pesquisa',
     teaching: 'ensino',
+    publications: 'publicacoes',
     media: 'midia',
     awards: 'premios',
     contact: 'contato',
@@ -46,6 +50,7 @@ export const LOCALE_SLUGS: Record<SupportedLanguage, Record<SectionKey, string>>
     members: 'members',
     research: 'research',
     teaching: 'teaching',
+    publications: 'publications',
     media: 'media',
     awards: 'awards',
     contact: 'contact',

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Container } from '../ui/Container';
 import { SectionHeader } from '../ui/SectionHeader';
 import { Button } from '../ui/Button';
-import { siteConfig } from '../../config/theme';
+import { siteConfig, affiliationLogos } from '../../config/theme';
 import {
   sanitizeContact,
   type ContactErrors,
@@ -192,6 +192,37 @@ export const Contact = () => {
             </p>
           </motion.div>
         </motion.form>
+
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={viewportOnce}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="mx-auto mt-20 max-w-3xl"
+        >
+          <p className="mb-6 text-center text-xs uppercase tracking-[0.3em] text-bone-400">
+            {t('contact.affiliations_label')}
+          </p>
+          <ul className="flex flex-wrap justify-center items-center gap-6">
+            {affiliationLogos.map((logo) => (
+              <li key={logo.id}>
+                <a
+                  href={logo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block opacity-50 transition-opacity hover:opacity-100"
+                  aria-label={logo.name}
+                >
+                  <img
+                    src={logo.src}
+                    alt={logo.name}
+                    className="h-10 w-auto max-w-[80px] object-contain"
+                  />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
       </Container>
     </section>
   );

@@ -4,11 +4,33 @@ import { Container } from '../ui/Container';
 import { SectionHeader } from '../ui/SectionHeader';
 import { fadeUp, stagger, viewportOnce } from '../../lib/motion';
 
-type Item = { index: string; title: string; description: string; tags: string[] };
+type ResearchLine = {
+  index: string;
+  title: string;
+  description: string;
+  tags: string[];
+  lab: string;
+};
+
+const LINE_KEYS = [
+  'imunologia-basica',
+  'vacinologia',
+  'biologia-celular-molecular',
+  'terapia-celular-imunoterapia',
+  'neuroimunologia',
+  'microbiologia',
+  'farmacologia',
+];
 
 export const Research = () => {
   const { t } = useTranslation();
-  const items = t('research.items', { returnObjects: true }) as Item[];
+
+  const lines = LINE_KEYS.map((key) =>
+    t(`research.lines.${key}`, { returnObjects: true }) as ResearchLine,
+  );
+
+  const libtecLines = lines.filter((l) => l.lab === 'libtec');
+  const licLines = lines.filter((l) => l.lab === 'lic');
 
   return (
     <section id="research" className="section relative">
@@ -33,48 +55,85 @@ export const Research = () => {
           description={t('research.section.description')}
         />
 
-        <motion.div
-          variants={stagger}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          className="grid gap-5 md:grid-cols-2"
-        >
-          {items.map((line) => (
-            <motion.article
-              key={line.index}
-              variants={fadeUp}
-              whileHover={{ y: -4, transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] } }}
-              className="group/card relative overflow-hidden rounded-2xl border border-chrome/5 glass-card p-8 md:p-10"
+        <div className="space-y-14">
+          <div>
+            <motion.h2
+              initial={{ opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={viewportOnce}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="mb-6 text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
             >
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-nebula-violet/15 blur-3xl opacity-60 transition-opacity duration-700 group-hover/card:opacity-100"
-              />
-              <header className="flex items-baseline justify-between">
-                <span className="font-mono text-xs uppercase tracking-[0.25em] text-bone-400">
-                  {line.index}
-                </span>
-                <span className="h-px w-12 bg-chrome/10" aria-hidden="true" />
-              </header>
-              <h3 className="mt-6 text-2xl font-semibold text-bone-50 md:text-3xl">
-                {line.title}
-              </h3>
-              <p className="mt-4 max-w-prose text-bone-300 text-pretty">{line.description}</p>
-              <ul className="mt-6 flex flex-wrap gap-2">
-                {line.tags.map((tag) => (
-                  <li
-                    key={tag}
-                    className="rounded-full border border-chrome/10 bg-chrome/[0.03] px-3 py-1 text-xs text-bone-200"
-                  >
-                    {tag}
-                  </li>
-                ))}
-              </ul>
-            </motion.article>
-          ))}
-        </motion.div>
+              {t('research.libtec_title')}
+            </motion.h2>
+            <motion.div
+              variants={stagger}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportOnce}
+              className="grid gap-5 md:grid-cols-2"
+            >
+              {libtecLines.map((line) => (
+                <ResearchCard key={line.index} line={line} />
+              ))}
+            </motion.div>
+          </div>
+
+          <div>
+            <motion.h2
+              initial={{ opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={viewportOnce}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="mb-6 text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
+            >
+              {t('research.lic_title')}
+            </motion.h2>
+            <motion.div
+              variants={stagger}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportOnce}
+              className="grid gap-5 md:grid-cols-2"
+            >
+              {licLines.map((line) => (
+                <ResearchCard key={line.index} line={line} />
+              ))}
+            </motion.div>
+          </div>
+        </div>
       </Container>
     </section>
   );
 };
+
+const ResearchCard = ({ line }: { line: ResearchLine }) => (
+  <motion.article
+    variants={fadeUp}
+    whileHover={{ y: -4, transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] } }}
+    className="group/card relative overflow-hidden rounded-2xl border border-chrome/5 glass-card p-8 md:p-10"
+  >
+    <div
+      aria-hidden="true"
+      className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-nebula-violet/15 blur-3xl opacity-60 transition-opacity duration-700 group-hover/card:opacity-100"
+    />
+    <header className="flex items-baseline justify-between">
+      <span className="font-mono text-xs uppercase tracking-[0.25em] text-bone-400">
+        {line.index}
+      </span>
+      <span className="h-px w-12 bg-chrome/10" aria-hidden="true" />
+    </header>
+    <h3 className="mt-6 text-2xl font-semibold text-bone-50 md:text-3xl">{line.title}</h3>
+    <p className="mt-4 max-w-prose text-bone-300 text-pretty">{line.description}</p>
+    <ul className="mt-6 flex flex-wrap gap-2">
+      {line.tags.map((tag) => (
+        <li
+          key={tag}
+          className="rounded-full border border-chrome/10 bg-chrome/[0.03] px-3 py-1 text-xs text-bone-200"
+        >
+          {tag}
+        </li>
+      ))}
+    </ul>
+  </motion.article>
+);

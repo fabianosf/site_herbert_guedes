@@ -1,23 +1,33 @@
 {
   "compilerOptions": {
+    /* Target & Output */
     "target": "ES2022",
-    "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "useDefineForClassFields": true,
+    "noEmit": true,
+
+    /* Module */
     "module": "ESNext",
-    "skipLibCheck": true,
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "allowImportingTsExtensions": true,
+
+    /* JSX */
     "jsx": "react-jsx",
+
+    /* Strictness */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* Test globals — vitest/globals needed while globals:true is set in vite.config.ts */
     "types": ["vitest/globals", "@testing-library/jest-dom"],
+
+    /* Path aliases — must match vite.config.ts resolve.alias */
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
