@@ -49,6 +49,7 @@ export const labMembers: LabMember[] = [
   { id: 'guilherme-oliveira', initials: 'GO', color: 'from-nebula-indigo/20 to-nebula-violet/20', role: 'masters', lab: 'libtec', photo: '/imagens/membros/membro-007.jpg', project: 'nocicepcao-leishmania' },
   { id: 'giuliana-correa', initials: 'GC', color: 'from-nebula-violet/20 to-nebula-pink/20', role: 'masters', lab: 'libtec', photo: '/imagens/membros/membro-008.jpg', project: 'vacina-laag' },
   { id: 'vinicius-souza', initials: 'VS', color: 'from-nebula-cyan/20 to-nebula-violet/20', role: 'masters', lab: 'lic', photo: '/imagens/membros/membro-021.jpg', project: 'pf429242-leishmania' },
+  { id: 'lara-nascimento', initials: 'LN', color: 'from-nebula-pink/20 to-nebula-indigo/20', role: 'masters', lab: 'lic', photo: '/imagens/membros/membro-033.jpg', project: 'imunoterapia-agren' },
   // === GRADUANDOS / IC ===
   { id: 'luna-ribeiro', initials: 'LR', color: 'from-nebula-cyan/15 to-nebula-indigo/15', role: 'undergrad', lab: 'libtec', photo: '/imagens/membros/membro-003.jpg', project: 'microbiota-leishmania' },
   { id: 'caroline-araujo', initials: 'CA', color: 'from-nebula-violet/15 to-nebula-cyan/15', role: 'undergrad', lab: 'libtec', photo: '/imagens/membros/membro-004.jpg', project: 'il22-il23-leishmania' },
