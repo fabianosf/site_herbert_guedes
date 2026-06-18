@@ -19,6 +19,7 @@ type OngoingItem = {
   level: string;
   area: string;
   funding: string;
+  defesa?: string;
 };
 type DefendedMap = Record<string, DefendedItem>;
 type OngoingMap = Record<string, OngoingItem>;
@@ -192,6 +193,14 @@ export const Teaching = () => {
                           <span>{o.area}</span>
                           <span aria-hidden="true">·</span>
                           <span>{o.funding}</span>
+                          {o.defesa && o.defesa !== '–' && (
+                            <>
+                              <span aria-hidden="true">·</span>
+                              <span className="text-nebula-cyan">
+                                {t('teaching.ongoing.defense_label')}: {o.defesa}
+                              </span>
+                            </>
+                          )}
                         </div>
                       </motion.li>
                     ))}

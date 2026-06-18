@@ -109,9 +109,22 @@
       "ana-luiza-pires": { "name": "Ana Luiza Nogueira de Oliveira Pires", "title": "", "focus": "Dynamics between myeloid cells and T cells in the exhaustion process" },
       "kaylane-goes": { "name": "Kaylane Carvalho Góes", "title": "", "focus": "Leishmania co-infection · Cellular exhaustion response" },
       "bianca-sa": { "name": "Bianca dos Santos de Sá", "title": "", "focus": "Intranasal administration of LaAg in golden hamsters against visceral leishmaniasis" },
-      "hanna-ribeiro": { "name": "Hanna Carolina Gomes Ribeiro", "title": "", "focus": "Immune response during Leishmania infantum infection in mice" }
+      "hanna-ribeiro": { "name": "Hanna Carolina Gomes Ribeiro", "title": "", "focus": "Immune response during Leishmania infantum infection in mice" },
+      "pollyanna-gomes": { "name": "Pollyanna Stephanie Gomes", "title": "Postdoctoral researcher", "focus": "Development of 2nd generation vaccine against Leishmania spp. infection" }
     },
-    "profile": "Profile"
+    "profile": "Profile",
+    "tabs": {
+      "main": "Libtec · LIC",
+      "partner": "UNIRIO Partnership"
+    },
+    "alessandra": {
+      "email": "alemfmartins@unirio.br",
+      "students_label": "Group researchers"
+    },
+    "imunirio": {
+      "title": "ImUNIRIO — University Extension",
+      "description": "ImUNIRIO is an extension project aimed at scientific education, immunology outreach, and health promotion. Our goal is to bring the university closer to the community through educational actions on vaccines, disease prevention, immunotherapy, and science, using accessible and evidence-based language. We also seek to combat fake news and demystify scientific topics, preparing students for scientific communication and social impact."
+    }
   },
   "research": {
     "section": {
@@ -287,30 +300,32 @@
     "ongoing": {
       "title": "Ongoing Supervision",
       "subtitle": "Researchers currently in training at the laboratory",
+      "defense_label": "Expected defense",
       "items": {
-        "ong-01": { "author": "Guilherme dos Santos Marback D'Oliveira", "title": "Mecanismos associados às alterações nociceptivas causadas pela infecção por Leishmania amazonensis em camundongos C57BL/6", "level": "masters", "area": "Neuroimunologia", "funding": "IOC" },
-        "ong-02": { "author": "Giuliana Abreu da Costa Correa", "title": "Caracterização do mecanismo de eficácia da vacina intranasal LaAg contra a leishmaniose", "level": "masters", "area": "Imunologia e vacinologia", "funding": "CNPq" },
-        "ong-03": { "author": "Caroline Camargo de Araújo", "title": "O papel das citocinas IL-22 e IL-23 na infecção por Leishmania amazonensis em camundongos C57BL/6", "level": "graduation", "area": "Imunologia", "funding": "PIBIC CNPq" },
-        "ong-04": { "author": "Vinícius Fernandes de Souza", "title": "Desenvolvimento de parasitos L. amazonensis resistentes ao PF-429242 para investigar a participação da subtilisina na via de biossíntese de esteróis", "level": "masters", "area": "Biologia Celular e Molecular", "funding": "CAPES" },
-        "ong-05": { "author": "Lara Areias do Nascimento", "title": "Imunoterapia utilizando AgREC contra leishmaniose visceral murina", "level": "masters", "area": "Farmacologia e Imunologia", "funding": "IOC" },
-        "ong-06": { "author": "João Pedro de Paula Duarte", "title": "Projeto em definição", "level": "graduation", "area": "—", "funding": "PIBIC" },
-        "ong-07": { "author": "Alisson Amaral da Rocha", "title": "Desenvolvimento de uma estratégia vacinal anti-Leishmania empregando parasitos geneticamente modificados vivo-atenuados", "level": "phd", "area": "Imunologia, Vacinologia e Biologia Molecular", "funding": "CAPES / CNPq Sanduíche" },
-        "ong-08": { "author": "Igor Bittencourt dos Santos", "title": "Investigar o papel das células TCD8+ reguladoras na infecção por L. amazonensis", "level": "phd", "area": "Biologia Celular e Molecular", "funding": "IOC" },
-        "ong-09": { "author": "Glauber Araujo da Silva Peixoto", "title": "Produção, eficácia e mecanismo de antígenos recombinantes conjugados à flagelina na imunização intranasal contra Leishmania spp", "level": "phd", "area": "Biologia Celular e Molecular", "funding": "CAPES / IOC" },
-        "ong-10": { "author": "Camila Nascimento Fernandez", "title": "Avaliação do potencial terapêutico de vesículas extracelulares de células estromais mesenquimais em modelo de leishmaniose cutânea experimental", "level": "graduation", "area": "Imunologia", "funding": "PIBIC CNPq" },
-        "ong-11": { "author": "Luan Firmino Cruz", "title": "Papel das sestrinas na indução de senescência a linfócitos T CD8 em animais infectados por parasitos do gênero Leishmania", "level": "postdoc", "area": "Imunologia", "funding": "CNPq" },
-        "ong-12": { "author": "Guilhermina Fernandes Silva", "title": "Avaliação da eficácia do Marizomib em L. braziliensis", "level": "graduation", "area": "Quimioterapia", "funding": "PIBIC CNPq" },
-        "ong-13": { "author": "Luna Botelho dos Reis Ribeiro", "title": "Avaliação da microbiota na amamentação adotiva/cohouse na lesão por Leishmania amazonensis", "level": "graduation", "area": "Imunologia e Microbiologia", "funding": "CNPq" },
-        "ong-14": { "author": "Alice Lima Continentino", "title": "Avaliação do papel de PI3k, mTOR, STAT3, Arginase-1 e PD-L1 na indução de exaustão de células T durante a infecção experimental por Leishmania amazonensis", "level": "phd", "area": "Imunologia", "funding": "CAPES" },
-        "ong-15": { "author": "Hozany Praxedes dos Santos Araujo", "title": "Potencial terapêutico das células Tγδ produtoras de IFN-γ na leishmaniose cutânea", "level": "phd", "area": "Imunologia", "funding": "CAPES" },
-        "ong-16": { "author": "Douglas Barroso de Almeida", "title": "Mecanismos envolvidos no tratamento da Leishmaniose Cutânea experimental utilizando vesículas extracelulares provenientes de tecido adiposo", "level": "phd", "area": "Biologia Celular e Molecular", "funding": "CAPES" },
-        "ong-17": { "author": "Thalita Soares Paixão do Couto e Silva", "title": "Avaliação da resposta imunológica em modelo murino de infecção por Sporothrix brasiliensis", "level": "masters", "area": "Imunologia", "funding": "CAPES" },
-        "ong-18": { "author": "Najara Cavalcante Rodrigues", "title": "Desenvolvimento de vacinas de segunda geração com antígenos recombinantes contra leishmaniose", "level": "postdoc", "area": "Biologia Celular e Molecular", "funding": "CNPq" },
-        "ong-19": { "author": "Julia Caroline Santana Do Nascimento", "title": "Desenvolvimento de novos candidatos vacinais anti-leishmaniose", "level": "graduation", "area": "Biologia Celular e Molecular", "funding": "CNPq" },
-        "ong-20": { "author": "Naiara Carla dos Santos Manhães", "title": "Avaliação da dinâmica entre células mieloides e células T no processo de exaustão", "level": "phd", "area": "Imunologia", "funding": "CAPES" },
-        "ong-21": { "author": "Vinicius Alexandre Cordeiro da Silva", "title": "Desenvolvimento de vacinas de segunda geração antileishmaniose", "level": "graduation", "area": "Imunologia Aplicada e Biologia Molecular", "funding": "PIBITI FIOCRUZ" },
-        "ong-22": { "author": "Gabriane Nascimento Porcino", "title": "Vacina de mRNA e o uso de anticorpos biespecíficos como imunoterapia contra a Leishmaniose", "level": "postdoc", "area": "Imunologia e vacinologia", "funding": "CNPq" },
-        "ong-23": { "author": "Kaylane Carvalho Góes", "title": "Terapia contra inibidores de checkpoints empregando anticorpos biespecíficos e pequenos RNAs de interferência (siRNA) no tratamento da Leishmaniose", "level": "graduation", "area": "Imunologia", "funding": "CNPq" }
+        "ong-01": { "author": "Guilherme dos Santos Marback D'Oliveira", "title": "Mecanismos associados às alterações nociceptivas causadas pela infecção por Leishmania amazonensis em camundongos C57BL/6", "level": "masters", "area": "Neuroimunologia", "funding": "IOC", "defesa": "2027.1" },
+        "ong-02": { "author": "Giuliana Abreu da Costa Correa", "title": "Caracterização do mecanismo de eficácia da vacina intranasal LaAg contra a leishmaniose", "level": "masters", "area": "Imunologia e vacinologia", "funding": "CNPq", "defesa": "2027" },
+        "ong-03": { "author": "Caroline Camargo de Araújo", "title": "O papel das citocinas IL-22 e IL-23 na infecção por Leishmania amazonensis em camundongos C57BL/6", "level": "graduation", "area": "Imunologia", "funding": "PIBIC CNPq", "defesa": "2026.1" },
+        "ong-04": { "author": "Vinícius Fernandes de Souza", "title": "Desenvolvimento de parasitos L. amazonensis resistentes ao PF-429242 para investigar a participação da subtilisina na via de biossíntese de esteróis", "level": "masters", "area": "Biologia Celular e Molecular", "funding": "CAPES", "defesa": "2026.1" },
+        "ong-05": { "author": "Lara Areias do Nascimento", "title": "Imunoterapia utilizando AgREC contra leishmaniose visceral murina", "level": "masters", "area": "Farmacologia e Imunologia", "funding": "IOC", "defesa": "2027.1" },
+        "ong-06": { "author": "João Pedro de Paula Duarte", "title": "Projeto em definição", "level": "graduation", "area": "—", "funding": "PIBIC", "defesa": "2028" },
+        "ong-07": { "author": "Alisson Amaral da Rocha", "title": "Desenvolvimento de uma estratégia vacinal anti-Leishmania empregando parasitos geneticamente modificados vivo-atenuados", "level": "phd", "area": "Imunologia, Vacinologia e Biologia Molecular", "funding": "CAPES / CNPq Sanduíche", "defesa": "2028.1" },
+        "ong-08": { "author": "Igor Bittencourt dos Santos", "title": "Investigar o papel das células TCD8+ reguladoras na infecção por L. amazonensis", "level": "phd", "area": "Biologia Celular e Molecular", "funding": "IOC", "defesa": "2029.1" },
+        "ong-09": { "author": "Glauber Araujo da Silva Peixoto", "title": "Produção, eficácia e mecanismo de antígenos recombinantes conjugados à flagelina na imunização intranasal contra Leishmania spp", "level": "phd", "area": "Biologia Celular e Molecular", "funding": "CAPES / IOC", "defesa": "2029.1" },
+        "ong-10": { "author": "Camila Nascimento Fernandez", "title": "Avaliação do potencial terapêutico de vesículas extracelulares de células estromais mesenquimais em modelo de leishmaniose cutânea experimental", "level": "graduation", "area": "Imunologia", "funding": "PIBIC CNPq", "defesa": "2026.1" },
+        "ong-11": { "author": "Luan Firmino Cruz", "title": "Papel das sestrinas na indução de senescência a linfócitos T CD8 em animais infectados por parasitos do gênero Leishmania", "level": "postdoc", "area": "Imunologia", "funding": "CNPq", "defesa": "–" },
+        "ong-12": { "author": "Guilhermina Fernandes Silva", "title": "Avaliação da eficácia do Marizomib em L. braziliensis", "level": "graduation", "area": "Quimioterapia", "funding": "PIBIC CNPq", "defesa": "2029.1" },
+        "ong-13": { "author": "Luna Botelho dos Reis Ribeiro", "title": "Avaliação da microbiota na amamentação adotiva/cohouse na lesão por Leishmania amazonensis", "level": "graduation", "area": "Imunologia e Microbiologia", "funding": "CNPq", "defesa": "–" },
+        "ong-14": { "author": "Alice Lima Continentino", "title": "Avaliação do papel de PI3k, mTOR, STAT3, Arginase-1 e PD-L1 na indução de exaustão de células T durante a infecção experimental por Leishmania amazonensis", "level": "phd", "area": "Imunologia", "funding": "CAPES", "defesa": "2030" },
+        "ong-15": { "author": "Hozany Praxedes dos Santos Araujo", "title": "Potencial terapêutico das células Tγδ produtoras de IFN-γ na leishmaniose cutânea", "level": "phd", "area": "Imunologia", "funding": "CAPES", "defesa": "2029.2" },
+        "ong-16": { "author": "Douglas Barroso de Almeida", "title": "Mecanismos envolvidos no tratamento da Leishmaniose Cutânea experimental utilizando vesículas extracelulares provenientes de tecido adiposo", "level": "phd", "area": "Biologia Celular e Molecular", "funding": "CAPES", "defesa": "2027.1" },
+        "ong-17": { "author": "Thalita Soares Paixão do Couto e Silva", "title": "Avaliação da resposta imunológica em modelo murino de infecção por Sporothrix brasiliensis", "level": "masters", "area": "Imunologia", "funding": "CAPES", "defesa": "2028.1" },
+        "ong-18": { "author": "Najara Cavalcante Rodrigues", "title": "Desenvolvimento de vacinas de segunda geração com antígenos recombinantes contra leishmaniose", "level": "postdoc", "area": "Biologia Celular e Molecular", "funding": "CNPq", "defesa": "–" },
+        "ong-19": { "author": "Julia Caroline Santana Do Nascimento", "title": "Desenvolvimento de novos candidatos vacinais anti-leishmaniose", "level": "graduation", "area": "Biologia Celular e Molecular", "funding": "CNPq", "defesa": "2027.2" },
+        "ong-20": { "author": "Naiara Carla dos Santos Manhães", "title": "Avaliação da dinâmica entre células mieloides e células T no processo de exaustão", "level": "phd", "area": "Imunologia", "funding": "CAPES", "defesa": "2029" },
+        "ong-21": { "author": "Vinicius Alexandre Cordeiro da Silva", "title": "Desenvolvimento de vacinas de segunda geração antileishmaniose", "level": "graduation", "area": "Imunologia Aplicada e Biologia Molecular", "funding": "PIBITI FIOCRUZ", "defesa": "2026.2" },
+        "ong-22": { "author": "Gabriane Nascimento Porcino", "title": "Vacina de mRNA e o uso de anticorpos biespecíficos como imunoterapia contra a Leishmaniose", "level": "postdoc", "area": "Imunologia e vacinologia", "funding": "CNPq", "defesa": "–" },
+        "ong-23": { "author": "Kaylane Carvalho Góes", "title": "Terapia contra inibidores de checkpoints empregando anticorpos biespecíficos e pequenos RNAs de interferência (siRNA) no tratamento da Leishmaniose", "level": "graduation", "area": "Imunologia", "funding": "CNPq", "defesa": "–" },
+        "ong-24": { "author": "Pollyanna Stephanie Gomes", "title": "Desenvolvimento de vacina de 2ª geração contra a infecção por Leishmania spp.", "level": "postdoc", "area": "Quimioterapia e vacina", "funding": "CNPq", "defesa": "–" }
       }
     }
   },
