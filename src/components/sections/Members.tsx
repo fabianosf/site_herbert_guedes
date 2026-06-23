@@ -133,7 +133,9 @@ export const Members = () => {
   const alessandra = labMembers.find((m) => m.id === 'alessandra-martins')!;
   const alessandraStudents = labMembers.filter((m) => ALESSANDRA_STUDENT_IDS.includes(m.id));
 
-  const mainMembers = labMembers.filter((m) => m.role !== 'partner');
+  const mainMembers = labMembers.filter(
+    (m) => m.role !== 'partner' && !ALESSANDRA_STUDENT_IDS.includes(m.id),
+  );
 
   return (
     <section id="members" className="section relative bg-ink-900/40">

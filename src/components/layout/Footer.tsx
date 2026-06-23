@@ -58,7 +58,7 @@ export const Footer = () => {
               <a href={`mailto:${email}`} className="link-underline break-all text-bone-100">
                 {email}
               </a>
-              <p className="pt-2 text-xs text-bone-400">INCA · FIOCRUZ · FioCâncer</p>
+              <p className="pt-2 text-xs text-bone-400">UFRJ · IOC · INCT</p>
             </FooterColumn>
           </div>
 

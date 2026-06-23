@@ -29,13 +29,13 @@ export const labMembers: LabMember[] = [
   // === PROFESSORES ===
   { id: 'herbert-guedes', initials: 'HG', color: 'from-nebula-violet/40 to-nebula-indigo/40', role: 'coordinator', lab: 'libtec-lic', photo: '/imagens/membros/membro-000.jpg', lattes: 'http://lattes.cnpq.br/7011121250058339' },
   { id: 'alessandra-martins', initials: 'AM', color: 'from-nebula-pink/30 to-nebula-violet/30', role: 'partner', lab: 'unirio', photo: '/imagens/membros/membro-001.jpg', lattes: 'http://lattes.cnpq.br/2680998194805836' },
-  { id: 'amanda-lisboa', initials: 'AL', color: 'from-nebula-cyan/25 to-nebula-indigo/25', role: 'secretary', lab: 'libtec-lic', photo: '/imagens/membros/amanda-lisboa.jpg' },
+  { id: 'amanda-lisboa', initials: 'AL', color: 'from-nebula-cyan/25 to-nebula-indigo/25', role: 'secretary', lab: 'libtec-lic' },
   // === PÓS-DOUTORANDOS ===
   { id: 'luan-cruz', initials: 'LC', color: 'from-nebula-indigo/30 to-nebula-cyan/30', role: 'postdoc', lab: 'libtec', photo: '/imagens/membros/membro-015.jpg', lattes: 'http://lattes.cnpq.br/7725348333995008', project: 'sestrinas-cd8' },
   { id: 'najara-rodrigues', initials: 'NR', color: 'from-nebula-violet/30 to-nebula-pink/30', role: 'postdoc', lab: 'lic', photo: '/imagens/membros/membro-024.jpg', lattes: 'http://lattes.cnpq.br/0800834416709200', project: 'vacina-segunda-geracao' },
   { id: 'gabriane-porcino', initials: 'GP', color: 'from-nebula-pink/30 to-nebula-violet/20', role: 'postdoc', lab: 'lic', photo: '/imagens/membros/membro-032.jpg', lattes: 'http://lattes.cnpq.br/7013877419396917', project: 'mrna-imunoterapia' },
   { id: 'federico-marsili', initials: 'FM', color: 'from-nebula-indigo/25 to-nebula-cyan/20', role: 'postdoc', lab: 'lic', photo: '/imagens/membros/membro-023.jpg', lattes: 'http://lattes.cnpq.br/3914789471745300' },
-  { id: 'pollyanna-gomes', initials: 'PG', color: 'from-nebula-violet/35 to-nebula-cyan/25', role: 'postdoc', lab: 'lic', lattes: 'http://lattes.cnpq.br/3104709683877706', project: 'vacina-segunda-geracao-leishmania' },
+  { id: 'pollyanna-gomes', initials: 'PG', color: 'from-nebula-violet/35 to-nebula-cyan/25', role: 'postdoc', lab: 'lic', photo: '/imagens/membros/pollyanna-gomes.png', lattes: 'http://lattes.cnpq.br/3104709683877706', project: 'vacina-segunda-geracao-leishmania' },
   // === DOUTORANDOS ===
   { id: 'alice-continentino', initials: 'AC', color: 'from-nebula-violet/25 to-nebula-indigo/25', role: 'phd', lab: 'libtec', photo: '/imagens/membros/membro-009.jpg', lattes: 'http://lattes.cnpq.br/9510804336155596', project: 'exaustao-celulas-t' },
   { id: 'igor-santos', initials: 'IS', color: 'from-nebula-indigo/25 to-nebula-cyan/20', role: 'phd', lab: 'libtec', photo: '/imagens/membros/membro-010.jpg', lattes: 'http://lattes.cnpq.br/0040197202113817', project: 'tcd8-reguladoras' },
@@ -79,10 +79,10 @@ export const affiliationLogos: AffiliationLogo[] = [
   { id: 'ufrj', name: 'UFRJ', src: '/imagens/logo-ufrj.jpeg', url: 'https://ufrj.br' },
   { id: 'fiocruz', name: 'FIOCRUZ', src: '/imagens/logo-fiocruz.jpeg', url: 'https://fiocruz.br' },
   { id: 'ioc', name: 'IOC', src: '/imagens/logo-ioc.jpeg', url: 'https://ioc.fiocruz.br' },
+  { id: 'inct', name: 'INCT Mucosa e Pele', src: '/imagens/logo-inct.jpeg', url: 'https://inctmucosaepele.org/' },
   { id: 'microbiologia', name: 'Instituto de Microbiologia UFRJ', src: '/imagens/logo-microbiologia-ufrj.jpeg', url: 'https://microbiologia.ufrj.br' },
   { id: 'libtec', name: 'Libtec', src: '/imagens/logo-libtec.jpeg', url: 'https://www.microbiologia.ufrj.br/laboratorio-de-imunobiotecnologia/' },
   { id: 'lic', name: 'LIC', src: '/imagens/logo-lic.jpeg', url: 'https://www.ioc.fiocruz.br/lic' },
-  { id: 'inct', name: 'INCT Mucosa e Pele', src: '/imagens/logo-inct.jpeg', url: 'https://inctmucosaepele.org/' },
 ];
 
 export type SiteConfig = {
@@ -93,12 +93,7 @@ export type SiteConfig = {
 };
 
 export const siteConfig: SiteConfig = {
-  socials: [
-    { label: 'LinkedIn', href: 'https://linkedin.com/' },
-    { label: 'ORCID', href: 'https://orcid.org/' },
-    { label: 'Lattes', href: 'http://lattes.cnpq.br/' },
-    { label: 'PubMed', href: 'https://pubmed.ncbi.nlm.nih.gov/' },
-  ],
+  socials: [{ label: 'Lattes', href: 'http://lattes.cnpq.br/7011121250058339' }],
   nav: [
     { key: 'home' },
     { key: 'members' },

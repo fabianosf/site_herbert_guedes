@@ -203,7 +203,7 @@ export const Contact = () => {
           <p className="mb-6 text-center text-xs uppercase tracking-[0.3em] text-bone-400">
             {t('contact.affiliations_label')}
           </p>
-          <ul className="flex flex-wrap justify-center items-center gap-6">
+          <ul className="flex flex-wrap justify-center items-center gap-8 md:gap-10">
             {affiliationLogos.map((logo) => (
               <li key={logo.id}>
                 <a
@@ -216,7 +216,7 @@ export const Contact = () => {
                   <img
                     src={logo.src}
                     alt={logo.name}
-                    className="h-10 w-auto max-w-[80px] object-contain"
+                    className="h-14 w-auto max-w-[120px] object-contain md:h-16 md:max-w-[140px]"
                   />
                 </a>
               </li>
