@@ -23,3 +23,5 @@ PROMPT_GUEDESLAB_FINAL.md
 # Raw source material (PDFs, DOCX, original images) — not needed in the repo
 /artigos/
 /imagens/
+.vercel
+.env*

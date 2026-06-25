@@ -5,7 +5,7 @@ import { Container } from '../ui/Container';
 import { LinkButton } from '../ui/LinkButton';
 import { fadeUp, stagger } from '../../lib/motion';
 
-const AFFILIATION_IDS = ['ufrj', 'fiocruz', 'ioc', 'microbiologia'];
+const AFFILIATION_IDS = ['ufrj', 'fiocruz', 'ioc', 'inct', 'microbiologia'];
 const LAB_IDS = ['libtec', 'lic'];
 
 export const Hero = () => {
