@@ -130,7 +130,7 @@ export const Members = () => {
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<'main' | 'partner'>('main');
 
-  const alessandra = labMembers.find((m) => m.id === 'alessandra-martins')!;
+  const partners = labMembers.filter((m) => m.role === 'partner');
   const alessandraStudents = labMembers.filter((m) => ALESSANDRA_STUDENT_IDS.includes(m.id));
 
   const mainMembers = labMembers.filter(
@@ -224,7 +224,7 @@ export const Members = () => {
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="space-y-14"
           >
-            {/* Alessandra card */}
+            {/* Partner cards */}
             <div>
               <motion.ul
                 variants={stagger}
@@ -232,7 +232,9 @@ export const Members = () => {
                 animate="visible"
                 className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
               >
-                <MemberCard member={alessandra} />
+                {partners.map((m) => (
+                  <MemberCard key={m.id} member={m} />
+                ))}
               </motion.ul>
 
               {/* Contact + Instagram */}
