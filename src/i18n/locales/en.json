@@ -68,7 +68,7 @@
     },
     "roles": {
       "coordinator": "Coordinator · Head of Laboratories",
-      "partner": "Professor · UNIRIO Partner",
+      "partner": "Professor · Institutional Partner",
       "secretary": "Secretary",
       "postdoc": "Postdoctoral Researcher",
       "phd": "PhD Student",
@@ -116,7 +116,7 @@
     "profile": "Profile",
     "tabs": {
       "main": "Libtec · LIC",
-      "partner": "Alessandra"
+      "partner": "GPTI Imunoprecisão"
     },
     "alessandra": {
       "email": "alemfmartins@unirio.br",
