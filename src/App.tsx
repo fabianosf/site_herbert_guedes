@@ -19,6 +19,9 @@ const Teaching = lazy(() =>
 const Publications = lazy(() =>
   import('./components/sections/Publications').then((m) => ({ default: m.Publications })),
 );
+const Events = lazy(() =>
+  import('./components/sections/Events').then((m) => ({ default: m.Events })),
+);
 // TODO: descomentar quando houver dados reais de mídia
 // const Media = lazy(() =>
 //   import('./components/sections/Media').then((m) => ({ default: m.Media })),
@@ -57,6 +60,9 @@ const SitePage = () => {
         </Suspense>
         <Suspense fallback={<SectionFallback />}>
           <Publications />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <Events />
         </Suspense>
         {/* <Media /> — descomentar quando houver dados reais */}
         {/* <Awards /> — descomentar quando houver dados reais */}

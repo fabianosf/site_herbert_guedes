@@ -14,6 +14,7 @@
     "publications": "Publications",
     "media": "In the Media",
     "awards": "Awards",
+    "events": "Events",
     "contact": "Contact",
     "contact_cta": "Contact"
   },
@@ -79,6 +80,7 @@
       "herbert-guedes": { "name": "Herbert Leonel de Matos Guedes", "title": "Prof. Dr.", "focus": "Immunology · Leishmaniasis · Vaccinology · Cell Therapy" },
       "alessandra-martins": { "name": "Alessandra Marcia da Fonseca Martins", "title": "Prof. Dr.", "focus": "Immunology · Immunotherapy · PD-1/PD-L1" },
       "patricia-machado": { "name": "Patrícia de Almeida Machado", "title": "Adjunct Prof. (UFF)", "focus": "Chemotherapy for Leishmaniases" },
+      "marina-soares": { "name": "Marina Pereira Soares", "title": "Master's Student (UFF)", "focus": "Evaluation of the antileishmanial potential of the serine protease inhibitor PF-429242 nanoencapsulated in Leishmania infantum" },
       "amanda-lisboa": { "name": "Amanda Lisbôa Marinho da Silva", "title": "", "focus": "Laboratory administration and secretariat" },
       "luan-cruz": { "name": "Luan Firmino Cruz", "title": "Dr.", "focus": "Sestrins · CD8 T lymphocyte senescence · Leishmania" },
       "najara-rodrigues": { "name": "Najara Cavalcante Rodrigues", "title": "Dr.", "focus": "Second-generation vaccines with recombinant antigens against leishmaniasis" },
@@ -117,6 +119,11 @@
     "tabs": {
       "main": "Libtec · LIC",
       "partner": "GPTI Imunoprecisão"
+    },
+    "patricia": {
+      "group_title": "Núcleo de Pesquisa em Leishmanioses — UFF",
+      "description": "Prof. Dr. Patrícia de Almeida Machado is an Adjunct Professor in the Department of Pathology at the Universidade Federal Fluminense (UFF) and conducts research in parasitology and molecular biology of protozoa, with emphasis on the prospection of new therapeutic targets and bioactive molecules for the treatment of leishmaniases. From 2017 to 2024, she completed a postdoctoral fellowship under the supervision of Prof. Dr. Herbert Leonel de Matos Guedes, during which she developed studies on the evaluation of compounds with antileishmanial potential, particularly those targeting the inhibition of parasitic proteases, seeking alternatives or complementary strategies to the chemotherapy currently available for leishmaniases. She currently maintains a scientific collaboration with GuedesLab.",
+      "students_label": "Group researcher"
     },
     "alessandra": {
       "email": "alemfmartins@unirio.br",
@@ -328,6 +335,22 @@
         "ong-24": { "author": "Pollyanna Stephanie Gomes", "title": "Development of 2nd generation vaccine against Leishmania spp. infection", "level": "postdoc", "area": "Chemotherapy and vaccines", "funding": "CNPq", "defesa": "–" }
       }
     }
+  },
+  "events": {
+    "section": {
+      "index": "05",
+      "eyebrow": "Events",
+      "title_a": "Lab moments and",
+      "title_b": "celebrations.",
+      "description": "Records of scientific events, outreach activities and group gatherings."
+    },
+    "items": {
+      "snct-2025": { "name": "Extension Event — SNCT 2025" },
+      "sus-inova-2026": { "name": "SUS Inova Brasil 2026" },
+      "simposio-ioc-2026": { "name": "IOC Symposium — 125th Anniversary 2026" },
+      "fim-de-ano-2025": { "name": "Year-End Celebration 2025" }
+    },
+    "empty": "Photos coming soon."
   },
   "media": {
     "section": {

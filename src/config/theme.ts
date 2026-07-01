@@ -9,6 +9,7 @@ export type NavKey =
   | 'research'
   | 'publications'
   | 'teaching'
+  | 'events'
   | 'contact';
 
 export type MemberRole = 'coordinator' | 'partner' | 'secretary' | 'postdoc' | 'phd' | 'masters' | 'undergrad';
@@ -30,6 +31,7 @@ export const labMembers: LabMember[] = [
   { id: 'herbert-guedes', initials: 'HG', color: 'from-nebula-violet/40 to-nebula-indigo/40', role: 'coordinator', lab: 'libtec-lic', photo: '/imagens/membros/membro-000.jpg', lattes: 'http://lattes.cnpq.br/7011121250058339' },
   { id: 'alessandra-martins', initials: 'AM', color: 'from-nebula-pink/30 to-nebula-violet/30', role: 'partner', lab: 'unirio', photo: '/imagens/membros/membro-001.jpg', lattes: 'http://lattes.cnpq.br/2680998194805836' },
   { id: 'patricia-machado', initials: 'PM', color: 'from-nebula-cyan/30 to-nebula-violet/20', role: 'partner', lab: 'uff', photo: '/imagens/membros/patricia.jpeg', lattes: 'http://lattes.cnpq.br/5349549779631011' },
+  { id: 'marina-soares', initials: 'MS', color: 'from-nebula-cyan/20 to-nebula-indigo/20', role: 'masters', lab: 'uff', photo: '/imagens/membros/marina.jpeg', lattes: 'http://lattes.cnpq.br/6821962032311882' },
   { id: 'amanda-lisboa', initials: 'AL', color: 'from-nebula-cyan/25 to-nebula-indigo/25', role: 'secretary', lab: 'libtec-lic', photo: '/imagens/membros/amanda-lisboa.png' },
   // === PÓS-DOUTORANDOS ===
   { id: 'luan-cruz', initials: 'LC', color: 'from-nebula-indigo/30 to-nebula-cyan/30', role: 'postdoc', lab: 'libtec', photo: '/imagens/membros/membro-015.jpg', lattes: 'http://lattes.cnpq.br/7725348333995008', project: 'sestrinas-cd8' },
@@ -101,6 +103,7 @@ export const siteConfig: SiteConfig = {
     { key: 'research' },
     { key: 'publications' },
     { key: 'teaching' },
+    { key: 'events' },
     { key: 'contact' },
   ],
   email: import.meta.env.VITE_CONTACT_EMAIL ?? 'herbertguedeslab@gmail.com',

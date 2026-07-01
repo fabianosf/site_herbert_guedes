@@ -14,6 +14,7 @@
     "publications": "Publicações",
     "media": "Na Mídia",
     "awards": "Prêmios",
+    "events": "Eventos",
     "contact": "Contato",
     "contact_cta": "Contato"
   },
@@ -79,6 +80,7 @@
       "herbert-guedes": { "name": "Herbert Leonel de Matos Guedes", "title": "Prof. Dr.", "focus": "Imunologia · Leishmaniose · Vacinologia · Terapia Celular" },
       "alessandra-martins": { "name": "Alessandra Marcia da Fonseca Martins", "title": "Profa. Dra.", "focus": "Imunologia · Imunoterapia · PD-1/PD-L1" },
       "patricia-machado": { "name": "Patrícia de Almeida Machado", "title": "Profa. Adjunta (UFF)", "focus": "Quimioterapia para as Leishmanioses" },
+      "marina-soares": { "name": "Marina Pereira Soares", "title": "Mestranda (UFF)", "focus": "Avaliação do potencial antileishmanial do inibidor de serino protease PF-429242 nanoencapsulado em Leishmania infantum" },
       "amanda-lisboa": { "name": "Amanda Lisbôa Marinho da Silva", "title": "", "focus": "Administração e secretaria do laboratório" },
       "luan-cruz": { "name": "Luan Firmino Cruz", "title": "Dr.", "focus": "Sestrinas · Senescência de linfócitos T CD8 · Leishmania" },
       "najara-rodrigues": { "name": "Najara Cavalcante Rodrigues", "title": "Dra.", "focus": "Vacinas de segunda geração com antígenos recombinantes contra leishmaniose" },
@@ -117,6 +119,11 @@
     "tabs": {
       "main": "Libtec · LIC",
       "partner": "GPTI Imunoprecisão"
+    },
+    "patricia": {
+      "group_title": "Núcleo de Pesquisa em Leishmanioses — UFF",
+      "description": "A Profa. Dra. Patrícia de Almeida Machado é Professora Adjunta no Departamento de Patologia da Universidade Federal Fluminense (UFF) e desenvolve pesquisas na área de parasitologia e biologia molecular de protozoários, com ênfase na prospecção de novos alvos terapêuticos e moléculas bioativas para o tratamento das leishmanioses. Entre 2017 e 2024, realizou estágio de pós-doutorado sob supervisão do Prof. Dr. Herbert Leonel de Matos Guedes, período em que desenvolveu estudos voltados à avaliação de compostos com potencial antileishmanial, especialmente aqueles direcionados à inibição de proteases parasitárias, buscando alternativas ou estratégias complementares à quimioterapia atualmente disponível para as leishmanioses. Atualmente, mantém colaboração científica com o GuedesLab.",
+      "students_label": "Pesquisadora do grupo"
     },
     "alessandra": {
       "email": "alemfmartins@unirio.br",
@@ -328,6 +335,22 @@
         "ong-24": { "author": "Pollyanna Stephanie Gomes", "title": "Desenvolvimento de vacina de 2ª geração contra a infecção por Leishmania spp.", "level": "postdoc", "area": "Quimioterapia e vacina", "funding": "CNPq", "defesa": "–" }
       }
     }
+  },
+  "events": {
+    "section": {
+      "index": "05",
+      "eyebrow": "Eventos",
+      "title_a": "Momentos do laboratório e",
+      "title_b": "confraternizações.",
+      "description": "Registros de eventos científicos, ações de extensão e encontros do grupo."
+    },
+    "items": {
+      "snct-2025": { "name": "Evento de Extensão — SNCT 2025" },
+      "sus-inova-2026": { "name": "SUS Inova Brasil 2026" },
+      "simposio-ioc-2026": { "name": "Simpósio IOC — Jubileu 125 anos 2026" },
+      "fim-de-ano-2025": { "name": "Confraternização de Fim de ano 2025" }
+    },
+    "empty": "Fotos em breve."
   },
   "media": {
     "section": {

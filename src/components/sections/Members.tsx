@@ -33,6 +33,8 @@ const ALESSANDRA_STUDENT_IDS = [
   'hanna-ribeiro',
 ];
 
+const PATRICIA_STUDENT_IDS = ['marina-soares'];
+
 type PhotoProps = { photo?: string; initials: string; color: string; name: string };
 
 const MemberPhoto = ({ photo, initials, color, name }: PhotoProps) => {
@@ -130,11 +132,16 @@ export const Members = () => {
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<'main' | 'partner'>('main');
 
-  const partners = labMembers.filter((m) => m.role === 'partner');
+  const patricia = labMembers.find((m) => m.id === 'patricia-machado');
+  const patriciaStudents = labMembers.filter((m) => PATRICIA_STUDENT_IDS.includes(m.id));
+  const alessandra = labMembers.find((m) => m.id === 'alessandra-martins');
   const alessandraStudents = labMembers.filter((m) => ALESSANDRA_STUDENT_IDS.includes(m.id));
 
   const mainMembers = labMembers.filter(
-    (m) => m.role !== 'partner' && !ALESSANDRA_STUDENT_IDS.includes(m.id),
+    (m) =>
+      m.role !== 'partner' &&
+      !ALESSANDRA_STUDENT_IDS.includes(m.id) &&
+      !PATRICIA_STUDENT_IDS.includes(m.id),
   );
 
   return (
@@ -216,29 +223,90 @@ export const Members = () => {
           </div>
         )}
 
-        {/* Tab: Parceria UNIRIO */}
+        {/* Tab: Parceria */}
         {activeTab === 'partner' && (
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="space-y-14"
+            className="space-y-16"
           >
-            {/* Partner cards */}
-            <div>
-              <motion.ul
-                variants={stagger}
-                initial="hidden"
-                animate="visible"
-                className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+            {/* ── Seção Patrícia / UFF ── */}
+            <div className="space-y-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                className="text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
               >
-                {partners.map((m) => (
-                  <MemberCard key={m.id} member={m} />
-                ))}
-              </motion.ul>
+                {t('members.patricia.group_title')}
+              </motion.h2>
+
+              {patricia && (
+                <motion.ul
+                  variants={stagger}
+                  initial="hidden"
+                  animate="visible"
+                  className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+                >
+                  <MemberCard member={patricia} />
+                </motion.ul>
+              )}
+
+              <div className="rounded-2xl border border-nebula-cyan/20 bg-nebula-cyan/5 p-6 md:p-8">
+                <p className="text-sm text-bone-300 leading-relaxed">
+                  {t('members.patricia.description')}
+                </p>
+              </div>
+
+              {patriciaStudents.length > 0 && (
+                <div>
+                  <motion.h2
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                    className="mb-6 text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
+                  >
+                    {t('members.patricia.students_label')}
+                  </motion.h2>
+                  <motion.ul
+                    variants={stagger}
+                    initial="hidden"
+                    animate="visible"
+                    className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+                  >
+                    {patriciaStudents.map((m) => (
+                      <MemberCard key={m.id} member={m} />
+                    ))}
+                  </motion.ul>
+                </div>
+              )}
+            </div>
+
+            {/* ── Seção Alessandra / UNIRIO ── */}
+            <div className="space-y-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                className="text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
+              >
+                GPTI Imunoprecisão — UNIRIO
+              </motion.h2>
+
+              {alessandra && (
+                <motion.ul
+                  variants={stagger}
+                  initial="hidden"
+                  animate="visible"
+                  className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+                >
+                  <MemberCard member={alessandra} />
+                </motion.ul>
+              )}
 
               {/* Contact + Instagram */}
-              <div className="mt-6 flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4">
                 <a
                   href={`mailto:${t('members.alessandra.email')}`}
                   className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
@@ -265,38 +333,38 @@ export const Members = () => {
                   @imunirio
                 </a>
               </div>
-            </div>
 
-            {/* ImUNIRIO description */}
-            <div className="rounded-2xl border border-nebula-violet/20 bg-nebula-violet/5 p-6 md:p-8">
-              <h3 className="text-sm font-semibold text-bone-50 mb-3">
-                {t('members.imunirio.title')}
-              </h3>
-              <p className="text-sm text-bone-300 leading-relaxed">
-                {t('members.imunirio.description')}
-              </p>
-            </div>
+              {/* ImUNIRIO description */}
+              <div className="rounded-2xl border border-nebula-violet/20 bg-nebula-violet/5 p-6 md:p-8">
+                <h3 className="text-sm font-semibold text-bone-50 mb-3">
+                  {t('members.imunirio.title')}
+                </h3>
+                <p className="text-sm text-bone-300 leading-relaxed">
+                  {t('members.imunirio.description')}
+                </p>
+              </div>
 
-            {/* Alessandra's students */}
-            <div>
-              <motion.h2
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                className="mb-6 text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
-              >
-                {t('members.alessandra.students_label')}
-              </motion.h2>
-              <motion.ul
-                variants={stagger}
-                initial="hidden"
-                animate="visible"
-                className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
-              >
-                {alessandraStudents.map((m) => (
-                  <MemberCard key={m.id} member={m} />
-                ))}
-              </motion.ul>
+              {/* Alessandra's students */}
+              <div>
+                <motion.h2
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                  className="mb-6 text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
+                >
+                  {t('members.alessandra.students_label')}
+                </motion.h2>
+                <motion.ul
+                  variants={stagger}
+                  initial="hidden"
+                  animate="visible"
+                  className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+                >
+                  {alessandraStudents.map((m) => (
+                    <MemberCard key={m.id} member={m} />
+                  ))}
+                </motion.ul>
+              </div>
             </div>
           </motion.div>
         )}
