@@ -130,7 +130,7 @@ const MemberCard = ({ member }: { member: LabMember }) => {
 
 export const Members = () => {
   const { t } = useTranslation();
-  const [activeTab, setActiveTab] = useState<'main' | 'partner'>('main');
+  const [activeTab, setActiveTab] = useState<'main' | 'partner-leish' | 'partner-gpti'>('main');
 
   const patricia = labMembers.find((m) => m.id === 'patricia-machado');
   const patriciaStudents = labMembers.filter((m) => PATRICIA_STUDENT_IDS.includes(m.id));
@@ -164,29 +164,26 @@ export const Members = () => {
         />
 
         {/* Tab buttons */}
-        <div className="flex gap-2 mb-12">
-          <button
-            onClick={() => setActiveTab('main')}
-            className={cn(
-              'px-5 py-2 text-sm font-medium rounded-full border transition-colors',
-              activeTab === 'main'
-                ? 'border-nebula-violet/50 bg-nebula-violet/10 text-bone-50'
-                : 'border-chrome/10 text-bone-400 hover:text-bone-200 hover:border-chrome/20',
-            )}
-          >
-            {t('members.tabs.main')}
-          </button>
-          <button
-            onClick={() => setActiveTab('partner')}
-            className={cn(
-              'px-5 py-2 text-sm font-medium rounded-full border transition-colors',
-              activeTab === 'partner'
-                ? 'border-nebula-violet/50 bg-nebula-violet/10 text-bone-50'
-                : 'border-chrome/10 text-bone-400 hover:text-bone-200 hover:border-chrome/20',
-            )}
-          >
-            {t('members.tabs.partner')}
-          </button>
+        <div className="flex flex-wrap gap-2 mb-12">
+          {(['main', 'partner-leish', 'partner-gpti'] as const).map((tab) => (
+            <button
+              key={tab}
+              type="button"
+              onClick={() => setActiveTab(tab)}
+              className={cn(
+                'px-5 py-2 text-sm font-medium rounded-full border transition-colors',
+                activeTab === tab
+                  ? 'border-nebula-violet/50 bg-nebula-violet/10 text-bone-50'
+                  : 'border-chrome/10 text-bone-400 hover:text-bone-200 hover:border-chrome/20',
+              )}
+            >
+              {tab === 'main'
+                ? t('members.tabs.main')
+                : tab === 'partner-leish'
+                  ? t('members.tabs.partner_leish')
+                  : t('members.tabs.partner_gpti')}
+            </button>
+          ))}
         </div>
 
         {/* Tab: Libtec + LIC */}
@@ -223,128 +220,41 @@ export const Members = () => {
           </div>
         )}
 
-        {/* Tab: Parceria */}
-        {activeTab === 'partner' && (
+        {/* Tab: Núcleo de Pesquisa em Leishmanioses */}
+        {activeTab === 'partner-leish' && (
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="space-y-16"
+            className="space-y-8"
           >
-            {/* ── Seção Patrícia / UFF ── */}
-            <div className="space-y-8">
-              <motion.h2
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                className="text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
-              >
-                {t('members.patricia.group_title')}
-              </motion.h2>
+            <motion.h2
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
+            >
+              {t('members.patricia.group_title')}
+            </motion.h2>
 
-              {patricia && (
-                <motion.ul
-                  variants={stagger}
-                  initial="hidden"
-                  animate="visible"
-                  className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
-                >
-                  <MemberCard member={patricia} />
-                </motion.ul>
-              )}
-
-              <div className="rounded-2xl border border-nebula-cyan/20 bg-nebula-cyan/5 p-6 md:p-8">
-                <p className="text-sm text-bone-300 leading-relaxed">
-                  {t('members.patricia.description')}
-                </p>
-              </div>
-
-              {patriciaStudents.length > 0 && (
-                <div>
-                  <motion.h2
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                    className="mb-6 text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
-                  >
-                    {t('members.patricia.students_label')}
-                  </motion.h2>
-                  <motion.ul
-                    variants={stagger}
-                    initial="hidden"
-                    animate="visible"
-                    className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
-                  >
-                    {patriciaStudents.map((m) => (
-                      <MemberCard key={m.id} member={m} />
-                    ))}
-                  </motion.ul>
-                </div>
-              )}
+            <div className="rounded-2xl border border-nebula-cyan/20 bg-nebula-cyan/5 p-6 md:p-8">
+              <p className="text-sm text-bone-300 leading-relaxed">
+                {t('members.patricia.description')}
+              </p>
             </div>
 
-            {/* ── Seção Alessandra / UNIRIO ── */}
-            <div className="space-y-8">
-              <motion.h2
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                className="text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
+            {patricia && (
+              <motion.ul
+                variants={stagger}
+                initial="hidden"
+                animate="visible"
+                className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
               >
-                GPTI Imunoprecisão — UNIRIO
-              </motion.h2>
+                <MemberCard member={patricia} />
+              </motion.ul>
+            )}
 
-              {alessandra && (
-                <motion.ul
-                  variants={stagger}
-                  initial="hidden"
-                  animate="visible"
-                  className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
-                >
-                  <MemberCard member={alessandra} />
-                </motion.ul>
-              )}
-
-              {/* Contact + Instagram */}
-              <div className="flex flex-wrap gap-4">
-                <a
-                  href={`mailto:${t('members.alessandra.email')}`}
-                  className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
-                >
-                  <Mail className="h-4 w-4 text-nebula-violet" aria-hidden="true" />
-                  {t('members.alessandra.email')}
-                </a>
-                <a
-                  href={socialLinks.instagramGptImunoPrecisao}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
-                >
-                  <Instagram className="h-4 w-4 text-nebula-pink" aria-hidden="true" />
-                  @gptimunoprecisao
-                </a>
-                <a
-                  href={socialLinks.instagramImUNIRIO}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
-                >
-                  <Instagram className="h-4 w-4 text-nebula-pink" aria-hidden="true" />
-                  @imunirio
-                </a>
-              </div>
-
-              {/* ImUNIRIO description */}
-              <div className="rounded-2xl border border-nebula-violet/20 bg-nebula-violet/5 p-6 md:p-8">
-                <h3 className="text-sm font-semibold text-bone-50 mb-3">
-                  {t('members.imunirio.title')}
-                </h3>
-                <p className="text-sm text-bone-300 leading-relaxed">
-                  {t('members.imunirio.description')}
-                </p>
-              </div>
-
-              {/* Alessandra's students */}
+            {patriciaStudents.length > 0 && (
               <div>
                 <motion.h2
                   initial={{ opacity: 0, y: 8 }}
@@ -352,7 +262,7 @@ export const Members = () => {
                   transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                   className="mb-6 text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
                 >
-                  {t('members.alessandra.students_label')}
+                  {t('members.patricia.students_label')}
                 </motion.h2>
                 <motion.ul
                   variants={stagger}
@@ -360,11 +270,99 @@ export const Members = () => {
                   animate="visible"
                   className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
                 >
-                  {alessandraStudents.map((m) => (
+                  {patriciaStudents.map((m) => (
                     <MemberCard key={m.id} member={m} />
                   ))}
                 </motion.ul>
               </div>
+            )}
+          </motion.div>
+        )}
+
+        {/* Tab: GPTI Imunoprecisão */}
+        {activeTab === 'partner-gpti' && (
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            className="space-y-8"
+          >
+            <motion.h2
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
+            >
+              GPTI Imunoprecisão — UNIRIO
+            </motion.h2>
+
+            {alessandra && (
+              <motion.ul
+                variants={stagger}
+                initial="hidden"
+                animate="visible"
+                className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+              >
+                <MemberCard member={alessandra} />
+              </motion.ul>
+            )}
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href={`mailto:${t('members.alessandra.email')}`}
+                className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
+              >
+                <Mail className="h-4 w-4 text-nebula-violet" aria-hidden="true" />
+                {t('members.alessandra.email')}
+              </a>
+              <a
+                href={socialLinks.instagramGptImunoPrecisao}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
+              >
+                <Instagram className="h-4 w-4 text-nebula-pink" aria-hidden="true" />
+                @gptimunoprecisao
+              </a>
+              <a
+                href={socialLinks.instagramImUNIRIO}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
+              >
+                <Instagram className="h-4 w-4 text-nebula-pink" aria-hidden="true" />
+                @imunirio
+              </a>
+            </div>
+
+            <div className="rounded-2xl border border-nebula-violet/20 bg-nebula-violet/5 p-6 md:p-8">
+              <h3 className="text-sm font-semibold text-bone-50 mb-3">
+                {t('members.imunirio.title')}
+              </h3>
+              <p className="text-sm text-bone-300 leading-relaxed">
+                {t('members.imunirio.description')}
+              </p>
+            </div>
+
+            <div>
+              <motion.h2
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                className="mb-6 text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
+              >
+                {t('members.alessandra.students_label')}
+              </motion.h2>
+              <motion.ul
+                variants={stagger}
+                initial="hidden"
+                animate="visible"
+                className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+              >
+                {alessandraStudents.map((m) => (
+                  <MemberCard key={m.id} member={m} />
+                ))}
+              </motion.ul>
             </div>
           </motion.div>
         )}

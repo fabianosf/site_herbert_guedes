@@ -118,7 +118,8 @@
     "profile": "Perfil",
     "tabs": {
       "main": "Libtec · LIC",
-      "partner": "GPTI Imunoprecisão"
+      "partner_leish": "Núcleo de Pesquisa em Leishmanioses",
+      "partner_gpti": "GPTI Imunoprecisão"
     },
     "patricia": {
       "group_title": "Núcleo de Pesquisa em Leishmanioses — UFF",
@@ -166,14 +167,14 @@
         "title": "Biologia Celular e Molecular",
         "description": "Estudo das estruturas, funções e operações das células a nível microscópico e molecular, com foco em parasitos e mecanismos de resistência.",
         "tags": ["Serino proteases", "CRISPR", "Resistência a fármacos", "Biossíntese de esteróis"],
-        "lab": "libtec"
+        "lab": "both"
       },
       "terapia-celular-imunoterapia": {
         "index": "04",
         "title": "Terapia Celular e Imunoterapia",
         "description": "Utilização de vesículas extracelulares, células estromais mesenquimais e compostos imunoterápicos no controle da leishmaniose e outras doenças.",
         "tags": ["Vesículas extracelulares", "Células mesenquimais", "PD-1/PD-L1", "Checkpoint", "siRNA"],
-        "lab": "libtec"
+        "lab": "both"
       },
       "neuroimunologia": {
         "index": "05",
@@ -244,8 +245,8 @@
     "title": "Ensino",
     "subtitle": "Formação e orientação acadêmica",
     "items": [
-      { "level": "UFRJ · IMPG", "title": "Pós-graduação · Microbiologia", "description": "Orientação no Programa de Pós-Graduação em Microbiologia do Instituto de Microbiologia Paulo de Goés da UFRJ." },
-      { "level": "FIOCRUZ · IOC", "title": "Pós-graduação · Biologia Parasitária", "description": "Orientação no Instituto Oswaldo Cruz com foco em imunologia de parasitos, vacinologia e doenças infecciosas." },
+      { "level": "UFRJ · IMPG", "title": "Pós-graduação · Imunologia", "description": "Orientação no Programa de Pós-Graduação em Imunologia do Instituto de Microbiologia Paulo de Goés da UFRJ." },
+      { "level": "FIOCRUZ · IOC", "title": "Pós-graduação · Biologia Celular e Molecular", "description": "Orientação no Instituto Oswaldo Cruz com foco em biologia celular e molecular, imunologia de parasitos e doenças infecciosas." },
       { "level": "Graduação", "title": "Iniciação Científica", "description": "Vagas para graduandos nas áreas de imunologia experimental, vacinologia e biologia parasitária — com fomento CNPq, FAPERJ e PIBIC." }
     ],
     "programs": {

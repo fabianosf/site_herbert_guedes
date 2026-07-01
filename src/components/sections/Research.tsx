@@ -29,8 +29,8 @@ export const Research = () => {
     t(`research.lines.${key}`, { returnObjects: true }) as ResearchLine,
   );
 
-  const libtecLines = lines.filter((l) => l.lab === 'libtec');
-  const licLines = lines.filter((l) => l.lab === 'lic');
+  const libtecLines = lines.filter((l) => l.lab === 'libtec' || l.lab === 'both');
+  const licLines = lines.filter((l) => l.lab === 'lic' || l.lab === 'both');
 
   return (
     <section id="research" className="section relative">

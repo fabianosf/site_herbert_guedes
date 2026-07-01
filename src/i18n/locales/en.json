@@ -118,7 +118,8 @@
     "profile": "Profile",
     "tabs": {
       "main": "Libtec · LIC",
-      "partner": "GPTI Imunoprecisão"
+      "partner_leish": "Leishmaniosis Research Nucleus",
+      "partner_gpti": "GPTI Imunoprecisão"
     },
     "patricia": {
       "group_title": "Núcleo de Pesquisa em Leishmanioses — UFF",
@@ -166,14 +167,14 @@
         "title": "Cell and Molecular Biology",
         "description": "Study of cell structures, functions and operations at microscopic and molecular level, focusing on parasites and resistance mechanisms.",
         "tags": ["Serine proteases", "CRISPR", "Drug resistance", "Sterol biosynthesis"],
-        "lab": "libtec"
+        "lab": "both"
       },
       "terapia-celular-imunoterapia": {
         "index": "04",
         "title": "Cell Therapy and Immunotherapy",
         "description": "Use of extracellular vesicles, mesenchymal stromal cells and immunotherapeutic compounds to control leishmaniasis and other diseases.",
         "tags": ["Extracellular vesicles", "Mesenchymal cells", "PD-1/PD-L1", "Checkpoint", "siRNA"],
-        "lab": "libtec"
+        "lab": "both"
       },
       "neuroimunologia": {
         "index": "05",
@@ -244,8 +245,8 @@
     "title": "Teaching",
     "subtitle": "Academic training and supervision",
     "items": [
-      { "level": "UFRJ · IMPG", "title": "Graduate program · Microbiology", "description": "Supervision in the Graduate Program in Microbiology at the Institute of Microbiology Paulo de Goés, UFRJ." },
-      { "level": "FIOCRUZ · IOC", "title": "Graduate program · Parasitic Biology", "description": "Supervision at the Oswaldo Cruz Institute focusing on parasite immunology, vaccinology and infectious diseases." },
+      { "level": "UFRJ · IMPG", "title": "Graduate program · Immunology", "description": "Supervision in the Graduate Program in Immunology at the Institute of Microbiology Paulo de Goés, UFRJ." },
+      { "level": "FIOCRUZ · IOC", "title": "Graduate program · Cell and Molecular Biology", "description": "Supervision at the Oswaldo Cruz Institute focusing on cell and molecular biology, parasite immunology and infectious diseases." },
       { "level": "Undergraduate", "title": "Scientific Initiation", "description": "Positions for undergraduates in experimental immunology, vaccinology and parasitic biology — with CNPq, FAPERJ and PIBIC funding." }
     ],
     "programs": {
