@@ -165,7 +165,7 @@ export const Members = () => {
 
         {/* Tab buttons */}
         <div className="flex flex-wrap gap-2 mb-12">
-          {(['main', 'partner-leish', 'partner-gpti'] as const).map((tab) => (
+          {(['main', 'partner-gpti', 'partner-leish'] as const).map((tab) => (
             <button
               key={tab}
               type="button"
@@ -220,6 +220,109 @@ export const Members = () => {
           </div>
         )}
 
+        {/* Tab: GPTI Imunoprecisão */}
+        {activeTab === 'partner-gpti' && (
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            className="space-y-8"
+          >
+            <motion.h2
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
+            >
+              {t('members.groups.partner')}
+            </motion.h2>
+
+            <motion.h2
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
+            >
+              GPTI Imunoprecisão — UNIRIO
+            </motion.h2>
+
+            <div className="rounded-2xl border border-nebula-violet/20 bg-nebula-violet/5 p-6 md:p-8">
+              <p className="text-sm text-bone-300 leading-relaxed">
+                {t('members.alessandra.description')}
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-nebula-violet/20 bg-nebula-violet/5 p-6 md:p-8">
+              <h3 className="text-sm font-semibold text-bone-50 mb-3">
+                {t('members.imunirio.title')}
+              </h3>
+              <p className="text-sm text-bone-300 leading-relaxed">
+                {t('members.imunirio.description')}
+              </p>
+            </div>
+
+            {alessandra && (
+              <motion.ul
+                variants={stagger}
+                initial="hidden"
+                animate="visible"
+                className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+              >
+                <MemberCard member={alessandra} />
+              </motion.ul>
+            )}
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href={`mailto:${t('members.alessandra.email')}`}
+                className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
+              >
+                <Mail className="h-4 w-4 text-nebula-violet" aria-hidden="true" />
+                {t('members.alessandra.email')}
+              </a>
+              <a
+                href={socialLinks.instagramGptImunoPrecisao}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
+              >
+                <Instagram className="h-4 w-4 text-nebula-pink" aria-hidden="true" />
+                @gptimunoprecisao
+              </a>
+              <a
+                href={socialLinks.instagramImUNIRIO}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
+              >
+                <Instagram className="h-4 w-4 text-nebula-pink" aria-hidden="true" />
+                @imunirio
+              </a>
+            </div>
+
+            <div>
+              <motion.h2
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                className="mb-6 text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
+              >
+                {t('members.alessandra.students_label')}
+              </motion.h2>
+              <motion.ul
+                variants={stagger}
+                initial="hidden"
+                animate="visible"
+                className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+              >
+                {alessandraStudents.map((m) => (
+                  <MemberCard key={m.id} member={m} />
+                ))}
+              </motion.ul>
+            </div>
+          </motion.div>
+        )}
+
         {/* Tab: Núcleo de Pesquisa em Leishmanioses */}
         {activeTab === 'partner-leish' && (
           <motion.div
@@ -228,6 +331,15 @@ export const Members = () => {
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="space-y-8"
           >
+            <motion.h2
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
+            >
+              {t('members.groups.partner')}
+            </motion.h2>
+
             <motion.h2
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
@@ -276,94 +388,6 @@ export const Members = () => {
                 </motion.ul>
               </div>
             )}
-          </motion.div>
-        )}
-
-        {/* Tab: GPTI Imunoprecisão */}
-        {activeTab === 'partner-gpti' && (
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="space-y-8"
-          >
-            <motion.h2
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
-            >
-              GPTI Imunoprecisão — UNIRIO
-            </motion.h2>
-
-            {alessandra && (
-              <motion.ul
-                variants={stagger}
-                initial="hidden"
-                animate="visible"
-                className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
-              >
-                <MemberCard member={alessandra} />
-              </motion.ul>
-            )}
-
-            <div className="flex flex-wrap gap-4">
-              <a
-                href={`mailto:${t('members.alessandra.email')}`}
-                className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
-              >
-                <Mail className="h-4 w-4 text-nebula-violet" aria-hidden="true" />
-                {t('members.alessandra.email')}
-              </a>
-              <a
-                href={socialLinks.instagramGptImunoPrecisao}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
-              >
-                <Instagram className="h-4 w-4 text-nebula-pink" aria-hidden="true" />
-                @gptimunoprecisao
-              </a>
-              <a
-                href={socialLinks.instagramImUNIRIO}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
-              >
-                <Instagram className="h-4 w-4 text-nebula-pink" aria-hidden="true" />
-                @imunirio
-              </a>
-            </div>
-
-            <div className="rounded-2xl border border-nebula-violet/20 bg-nebula-violet/5 p-6 md:p-8">
-              <h3 className="text-sm font-semibold text-bone-50 mb-3">
-                {t('members.imunirio.title')}
-              </h3>
-              <p className="text-sm text-bone-300 leading-relaxed">
-                {t('members.imunirio.description')}
-              </p>
-            </div>
-
-            <div>
-              <motion.h2
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                className="mb-6 text-xs uppercase tracking-[0.3em] text-bone-400 border-b border-chrome/8 pb-3"
-              >
-                {t('members.alessandra.students_label')}
-              </motion.h2>
-              <motion.ul
-                variants={stagger}
-                initial="hidden"
-                animate="visible"
-                className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
-              >
-                {alessandraStudents.map((m) => (
-                  <MemberCard key={m.id} member={m} />
-                ))}
-              </motion.ul>
-            </div>
           </motion.div>
         )}
       </Container>
