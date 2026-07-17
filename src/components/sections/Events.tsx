@@ -110,7 +110,13 @@ export const Events = () => {
             initial="hidden"
             whileInView="visible"
             viewport={viewportOnce}
-            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3"
+            className={cn(
+              'grid gap-3',
+              photos.length === 1 && 'grid-cols-1 max-w-[240px]',
+              photos.length === 2 && 'grid-cols-2 max-w-md',
+              photos.length === 3 && 'grid-cols-2 sm:grid-cols-3 max-w-2xl',
+              photos.length >= 4 && 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-4',
+            )}
           >
             {photos.map((src, i) => (
               <motion.button

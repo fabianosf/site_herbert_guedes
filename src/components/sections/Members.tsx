@@ -214,6 +214,36 @@ export const Members = () => {
                       <MemberCard key={m.id} member={m} />
                     ))}
                   </motion.ul>
+
+                  {groupKey === 'professors' && (
+                    <div className="mt-6 flex flex-wrap gap-4">
+                      <a
+                        href={`mailto:${socialLinks.emailContato}`}
+                        className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
+                      >
+                        <Mail className="h-4 w-4 text-nebula-violet" aria-hidden="true" />
+                        {socialLinks.emailContato}
+                      </a>
+                      <a
+                        href={socialLinks.instagramLibtec}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
+                      >
+                        <Instagram className="h-4 w-4 text-nebula-pink" aria-hidden="true" />
+                        @libtec_ufrj
+                      </a>
+                      <a
+                        href={socialLinks.instagramLic}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm text-bone-400 hover:text-bone-50 transition-colors"
+                      >
+                        <Instagram className="h-4 w-4 text-nebula-pink" aria-hidden="true" />
+                        @lic_ioc_fiocruz
+                      </a>
+                    </div>
+                  )}
                 </div>
               );
             })}

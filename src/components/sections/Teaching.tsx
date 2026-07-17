@@ -4,6 +4,13 @@ import { Container } from '../ui/Container';
 import { SectionHeader } from '../ui/SectionHeader';
 import { fadeUp, stagger, viewportOnce } from '../../lib/motion';
 
+// Large blocks (list of theses, ongoing supervisions) can be taller than the
+// viewport itself. `viewportOnce` requires 20% of the element's own height to
+// be visible before it fades in, which on a very tall block means it stays
+// invisible for a long stretch of scroll — reading as a blank gap in the page.
+// These wrappers just need a sliver on screen to start revealing.
+const viewportEager = { once: true, amount: 0 } as const;
+
 type Item = { title: string; level: string; description: string };
 type DefendedItem = {
   author: string;
@@ -73,7 +80,7 @@ export const Teaching = () => {
           variants={stagger}
           initial="hidden"
           whileInView="visible"
-          viewport={viewportOnce}
+          viewport={viewportEager}
           className="divide-y divide-chrome/5 border-y border-chrome/5"
         >
           {items.map((item, i) => (
@@ -98,7 +105,7 @@ export const Teaching = () => {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={viewportOnce}
+          viewport={viewportEager}
           className="mt-20"
         >
           <h2 className="text-lg font-semibold text-bone-50 mb-8 flex items-center gap-3">
@@ -142,7 +149,7 @@ export const Teaching = () => {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={viewportOnce}
+          viewport={viewportEager}
           className="mt-20"
         >
           <h2 className="text-lg font-semibold text-bone-50 mb-2 flex items-center gap-3">
