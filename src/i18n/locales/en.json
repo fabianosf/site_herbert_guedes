@@ -396,9 +396,9 @@
   "publications": {
     "section": {
       "index": "03",
-      "eyebrow": "Publications",
-      "title_a": "Scientific output from the",
-      "title_b": "research group.",
+      "eyebrow": "Recent Publications",
+      "title_a": "Recent",
+      "title_b": "Publications",
       "description": "Articles published in peer-reviewed international journals."
     },
     "title": "Publications",

@@ -23,6 +23,8 @@ export const Publications = () => {
 
   const link = (pub: (typeof publications)[0]) => pub.wos ?? pub.doi ?? null;
 
+  const doiLabel = (doi?: string) => doi?.replace(/^https?:\/\/doi\.org\//i, '') ?? null;
+
   return (
     <section id="publications" className="section relative bg-ink-900/40">
       <div
@@ -83,6 +85,19 @@ export const Publications = () => {
                       <p className="mt-2 text-sm text-bone-400 leading-relaxed">
                         {content.authors}
                       </p>
+                      {pub.doi && (
+                        <p className="mt-2 font-mono text-xs text-bone-400">
+                          DOI:{' '}
+                          <a
+                            href={pub.doi}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-accent transition-colors hover:text-accent/80"
+                          >
+                            {doiLabel(pub.doi)}
+                          </a>
+                        </p>
+                      )}
                     </div>
                     {href ? (
                       <a

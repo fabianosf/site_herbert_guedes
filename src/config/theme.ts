@@ -134,18 +134,86 @@ export type Publication = {
 };
 
 export const publications: Publication[] = [
-  { id: 'pub-2026-01', year: 2026, journal: 'Parasites & Vectors' },
-  { id: 'pub-2026-02', year: 2026, journal: 'Frontiers in Immunology' },
-  { id: 'pub-2025-01', year: 2025, journal: 'Vaccines', doi: 'https://doi.org/10.3390/vaccines13010129', wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:001430671500001' },
-  { id: 'pub-2025-02', year: 2025, journal: 'Scientific Reports', wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:001605876400035' },
-  { id: 'pub-2025-03', year: 2025, journal: 'Frontiers in Immunology' },
-  { id: 'pub-2025-04', year: 2025, journal: 'Antimicrobial Agents and Chemotherapy', wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:A1972L620200001' },
-  { id: 'pub-2025-05', year: 2025, journal: 'Virulence' },
-  { id: 'pub-2024-01', year: 2024, journal: 'Journal of Leukocyte Biology', wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:001380769900001' },
-  { id: 'pub-2024-02', year: 2024, journal: 'Acta Tropica', wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:001181305200001' },
-  { id: 'pub-2024-03', year: 2024, journal: 'Journal of Extracellular Vesicles', wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:001285491600001' },
-  { id: 'pub-2023-01', year: 2023, journal: 'Vaccine: X', wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:001112106500001' },
-  { id: 'pub-2022-01', year: 2022, journal: 'Frontiers in Immunology', wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:000826891500001' },
+  {
+    id: 'pub-2026-01',
+    year: 2026,
+    journal: 'Parasites & Vectors',
+    doi: 'https://doi.org/10.1186/s13071-025-07127-w',
+  },
+  {
+    id: 'pub-2026-02',
+    year: 2026,
+    journal: 'Frontiers in Immunology',
+    doi: 'https://doi.org/10.3389/fimmu.2026.1684708',
+  },
+  {
+    id: 'pub-2025-01',
+    year: 2025,
+    journal: 'Vaccines',
+    doi: 'https://doi.org/10.3390/vaccines13020129',
+    wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:001430671500001',
+  },
+  {
+    id: 'pub-2025-02',
+    year: 2025,
+    journal: 'Scientific Reports',
+    doi: 'https://doi.org/10.1038/s41598-025-21669-0',
+    wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:001605876400035',
+  },
+  {
+    id: 'pub-2025-03',
+    year: 2025,
+    journal: 'Frontiers in Immunology',
+    doi: 'https://doi.org/10.3389/fimmu.2025.1621781',
+  },
+  {
+    id: 'pub-2025-04',
+    year: 2025,
+    journal: 'Antimicrobial Agents and Chemotherapy',
+    doi: 'https://doi.org/10.1128/aac.00286-25',
+    wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:A1972L620200001',
+  },
+  {
+    id: 'pub-2025-05',
+    year: 2025,
+    journal: 'Virulence',
+    doi: 'https://doi.org/10.1080/21505594.2025.2581346',
+  },
+  {
+    id: 'pub-2024-01',
+    year: 2024,
+    journal: 'Journal of Leukocyte Biology',
+    doi: 'https://doi.org/10.1093/jleuko/qiae251',
+    wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:001380769900001',
+  },
+  {
+    id: 'pub-2024-02',
+    year: 2024,
+    journal: 'Acta Tropica',
+    doi: 'https://doi.org/10.1016/j.actatropica.2024.107125',
+    wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:001181305200001',
+  },
+  {
+    id: 'pub-2024-03',
+    year: 2024,
+    journal: 'Journal of Extracellular Vesicles',
+    doi: 'https://doi.org/10.1002/jev2.12496',
+    wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:001285491600001',
+  },
+  {
+    id: 'pub-2023-01',
+    year: 2023,
+    journal: 'Vaccine: X',
+    doi: 'https://doi.org/10.1016/j.jvacx.2023.100403',
+    wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:001112106500001',
+  },
+  {
+    id: 'pub-2022-01',
+    year: 2022,
+    journal: 'Frontiers in Immunology',
+    doi: 'https://doi.org/10.3389/fimmu.2022.884760',
+    wos: 'https://www.webofscience.com/wos/woscc/full-record/WOS:000826891500001',
+  },
 ];
 
 export const motionDefaults = {

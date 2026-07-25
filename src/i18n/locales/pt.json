@@ -396,9 +396,9 @@
   "publications": {
     "section": {
       "index": "03",
-      "eyebrow": "Publicações",
-      "title_a": "Produção científica do",
-      "title_b": "grupo de pesquisa.",
+      "eyebrow": "Publicações Recentes",
+      "title_a": "Publicações",
+      "title_b": "Recentes",
       "description": "Artigos publicados em periódicos internacionais revisados por pares."
     },
     "title": "Publicações",
