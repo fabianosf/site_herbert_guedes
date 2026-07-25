@@ -146,7 +146,9 @@ export const Events = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 flex items-center justify-center bg-ink-900/95 backdrop-blur-sm"
-            onClick={closeLightbox}
+            onClick={(e) => {
+              if (e.target === e.currentTarget) closeLightbox();
+            }}
           >
             <button
               type="button"
@@ -168,7 +170,6 @@ export const Events = () => {
               src={EVENT_PHOTOS[lightbox.eventId][lightbox.index]}
               alt=""
               className="max-h-[85vh] max-w-[90vw] object-contain rounded-xl"
-              onClick={(e) => e.stopPropagation()}
             />
             <button
               type="button"
