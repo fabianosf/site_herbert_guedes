@@ -33,6 +33,9 @@ const Events = lazy(() =>
 const Contact = lazy(() =>
   import('./components/sections/Contact').then((m) => ({ default: m.Contact })),
 );
+const Gallery = lazy(() =>
+  import('./components/sections/Gallery').then((m) => ({ default: m.Gallery })),
+);
 
 const SectionFallback = () => (
   <div className="section" aria-hidden="true">
@@ -68,6 +71,9 @@ const SitePage = () => {
         {/* <Awards /> — descomentar quando houver dados reais */}
         <Suspense fallback={<SectionFallback />}>
           <Contact />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <Gallery />
         </Suspense>
       </main>
       <Footer />

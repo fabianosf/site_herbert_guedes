@@ -10,7 +10,8 @@ export type NavKey =
   | 'publications'
   | 'teaching'
   | 'events'
-  | 'contact';
+  | 'contact'
+  | 'gallery';
 
 export type MemberRole = 'coordinator' | 'partner' | 'secretary' | 'postdoc' | 'phd' | 'masters' | 'undergrad';
 export type LabKey = 'libtec' | 'lic' | 'libtec-lic' | 'unirio' | 'uff';
@@ -44,8 +45,8 @@ export const labMembers: LabMember[] = [
   { id: 'igor-santos', initials: 'IS', color: 'from-nebula-indigo/25 to-nebula-cyan/20', role: 'phd', lab: 'libtec', photo: '/imagens/membros/membro-010.jpg', lattes: 'http://lattes.cnpq.br/0040197202113817', project: 'tcd8-reguladoras' },
   { id: 'hozany-araujo', initials: 'HA', color: 'from-nebula-cyan/25 to-nebula-indigo/20', role: 'phd', lab: 'libtec', photo: '/imagens/membros/membro-011.jpg', lattes: 'http://lattes.cnpq.br/8262311546024370', project: 'tgd-leishmaniose' },
   { id: 'naiara-manhaes', initials: 'NM', color: 'from-nebula-pink/25 to-nebula-violet/20', role: 'phd', lab: 'libtec', photo: '/imagens/membros/membro-012.jpg', lattes: 'http://lattes.cnpq.br/7385638830037568', project: 'exaustao-mieloides' },
-  { id: 'douglas-almeida', initials: 'DA', color: 'from-nebula-violet/20 to-nebula-pink/20', role: 'phd', lab: 'libtec', photo: '/imagens/membros/membro-013.jpg', lattes: 'http://lattes.cnpq.br/7234047890292201', project: 'vesiculas-adiposo' },
-  { id: 'alisson-rocha', initials: 'AR', color: 'from-nebula-cyan/20 to-nebula-indigo/20', role: 'phd', lab: 'libtec', photo: '/imagens/membros/membro-014.jpg', lattes: 'http://lattes.cnpq.br/3667166927941557', project: 'vacina-atenuada' },
+  { id: 'douglas-almeida', initials: 'DA', color: 'from-nebula-violet/20 to-nebula-pink/20', role: 'phd', lab: 'libtec', photo: '/imagens/membros/douglas-almeida.jpg', lattes: 'http://lattes.cnpq.br/7234047890292201', project: 'vesiculas-adiposo' },
+  { id: 'alisson-rocha', initials: 'AR', color: 'from-nebula-cyan/20 to-nebula-indigo/20', role: 'phd', lab: 'libtec', photo: '/imagens/membros/alisson-rocha.jpg', lattes: 'http://lattes.cnpq.br/3667166927941557', project: 'vacina-atenuada' },
   { id: 'glauber-peixoto', initials: 'GP', color: 'from-nebula-indigo/20 to-nebula-cyan/25', role: 'phd', lab: 'lic', photo: '/imagens/membros/membro-022.jpg', lattes: 'http://lattes.cnpq.br/1921358417037159', project: 'flagelina-intranasal' },
   // === MESTRANDOS ===
   { id: 'thalita-silva', initials: 'TS', color: 'from-nebula-pink/20 to-nebula-violet/20', role: 'masters', lab: 'libtec', photo: '/imagens/membros/membro-006.jpg', lattes: 'http://lattes.cnpq.br/1151571483026073', project: 'sporothrix' },
@@ -105,6 +106,7 @@ export const siteConfig: SiteConfig = {
     { key: 'teaching' },
     { key: 'events' },
     { key: 'contact' },
+    { key: 'gallery' },
   ],
   email: import.meta.env.VITE_CONTACT_EMAIL ?? 'herbertguedeslab@gmail.com',
   contactEndpoint: import.meta.env.VITE_CONTACT_ENDPOINT,

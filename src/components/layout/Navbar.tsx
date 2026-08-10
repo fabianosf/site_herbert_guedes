@@ -59,7 +59,7 @@ export const Navbar = () => {
             </span>
           </LocalizedLink>
 
-          <ul className="hidden items-center gap-6 lg:flex">
+          <ul className="hidden items-center gap-4 xl:gap-6 lg:flex">
             {siteConfig.nav.map((item) => (
               <li key={item.key}>
                 <LocalizedLink

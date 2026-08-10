@@ -9,7 +9,8 @@ export type SectionKey =
   | 'events'
   | 'media'
   | 'awards'
-  | 'contact';
+  | 'contact'
+  | 'gallery';
 
 export const SECTIONS: readonly SectionKey[] = [
   'home',
@@ -21,6 +22,7 @@ export const SECTIONS: readonly SectionKey[] = [
   'media',
   'awards',
   'contact',
+  'gallery',
 ] as const;
 
 /** Section key -> in-document element id. */
@@ -34,6 +36,7 @@ export const SECTION_TO_ID: Record<SectionKey, string> = {
   media: 'media',
   awards: 'awards',
   contact: 'contact',
+  gallery: 'gallery',
 };
 
 /** Localized URL slugs per language. Empty slug = root for that language. */
@@ -48,6 +51,7 @@ export const LOCALE_SLUGS: Record<SupportedLanguage, Record<SectionKey, string>>
     media: 'midia',
     awards: 'premios',
     contact: 'contato',
+    gallery: 'galeria',
   },
   en: {
     home: '',
@@ -59,6 +63,7 @@ export const LOCALE_SLUGS: Record<SupportedLanguage, Record<SectionKey, string>>
     media: 'media',
     awards: 'awards',
     contact: 'contact',
+    gallery: 'gallery',
   },
 };
 

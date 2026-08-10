@@ -19,6 +19,7 @@
     "awards": "Prêmios",
     "events": "Eventos",
     "contact": "Contato",
+    "gallery": "Galeria de Fotos",
     "contact_cta": "Contato"
   },
   "common": {
@@ -1603,6 +1604,23 @@
         "org": "FIOCRUZ"
       }
     ]
+  },
+  "gallery": {
+    "section": {
+      "index": "08",
+      "eyebrow": "Galeria",
+      "title_a": "Galeria de",
+      "title_b": "fotos.",
+      "description": "Registros do laboratório, equipe e momentos do GuedesLab."
+    },
+    "empty": "Nenhuma foto disponível no momento.",
+    "load_more": "Carregar mais fotos",
+    "showing": "Mostrando {{shown}} de {{total}} fotos",
+    "photo_aria": "Foto {{n}}",
+    "lightbox_aria": "Visualização ampliada da galeria",
+    "close": "Fechar",
+    "prev": "Anterior",
+    "next": "Próxima"
   },
   "contact": {
     "section": {

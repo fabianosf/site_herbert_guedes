@@ -19,6 +19,7 @@
     "awards": "Awards",
     "events": "Events",
     "contact": "Contact",
+    "gallery": "Photo Gallery",
     "contact_cta": "Contact"
   },
   "common": {
@@ -1603,6 +1604,23 @@
         "org": "FIOCRUZ"
       }
     ]
+  },
+  "gallery": {
+    "section": {
+      "index": "08",
+      "eyebrow": "Gallery",
+      "title_a": "Photo",
+      "title_b": "gallery.",
+      "description": "Moments from the lab, the team, and life at GuedesLab."
+    },
+    "empty": "No photos available at the moment.",
+    "load_more": "Load more photos",
+    "showing": "Showing {{shown}} of {{total}} photos",
+    "photo_aria": "Photo {{n}}",
+    "lightbox_aria": "Gallery lightbox",
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next"
   },
   "contact": {
     "section": {

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://herbertguedes.com/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://herbertguedes.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://herbertguedes.com/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://herbertguedes.com/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/membros</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://herbertguedes.com/membros" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://herbertguedes.com/en/members" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/pesquisa</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://herbertguedes.com/pesquisa" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://herbertguedes.com/en/research" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/publicacoes</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://herbertguedes.com/publicacoes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://herbertguedes.com/en/publications" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/ensino</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://herbertguedes.com/ensino" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://herbertguedes.com/en/teaching" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/eventos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://herbertguedes.com/eventos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://herbertguedes.com/en/events" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/contato</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://herbertguedes.com/contato" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://herbertguedes.com/en/contact" />
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/galeria</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://herbertguedes.com/galeria" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://herbertguedes.com/en/gallery" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://herbertguedes.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://herbertguedes.com/en" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/en/members</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/en/research</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/en/publications</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/en/teaching</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/en/events</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/en/contact</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://herbertguedes.com/en/gallery</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
