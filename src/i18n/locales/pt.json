@@ -298,6 +298,9 @@
     },
     "title": "Pesquisa",
     "subtitle": "Linhas de investigação científica",
+    "infographic": {
+      "alt": "Linhas de pesquisa do laboratório: Vacinas, Imunoterapia, Terapia Celular, Quimioterapia e Imunobiologia com modelos murinos."
+    },
     "libtec_title": "Linhas de pesquisa — Libtec",
     "lic_title": "Linhas de pesquisa — LIC",
     "lines": {

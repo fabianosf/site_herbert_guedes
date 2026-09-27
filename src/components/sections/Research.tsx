@@ -55,6 +55,22 @@ export const Research = () => {
           description={t('research.section.description')}
         />
 
+        <motion.figure
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          className="mb-16 md:mb-24 overflow-hidden rounded-2xl border border-chrome/5 bg-chrome/[0.02]"
+        >
+          <img
+            src="/imagens/research-lines.webp"
+            alt={t('research.infographic.alt')}
+            className="w-full h-auto object-contain"
+            loading="lazy"
+            decoding="async"
+          />
+        </motion.figure>
+
         <div className="space-y-14">
           <div>
             <motion.h2

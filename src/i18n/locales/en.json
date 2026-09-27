@@ -298,6 +298,9 @@
     },
     "title": "Research",
     "subtitle": "Scientific research lines",
+    "infographic": {
+      "alt": "Laboratory research lines: Vaccines, Immunotherapy, Cell Therapy, Chemotherapy, and Immunobiology & mouse models."
+    },
     "libtec_title": "Research lines — Libtec",
     "lic_title": "Research lines — LIC",
     "lines": {
