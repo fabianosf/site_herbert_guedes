@@ -60,7 +60,7 @@ export const Research = () => {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="mb-16 md:mb-24 overflow-hidden rounded-2xl border border-chrome/5 bg-chrome/[0.02]"
+          className="mx-auto mb-16 md:mb-24 max-w-4xl overflow-hidden rounded-2xl border border-chrome/5 bg-chrome/[0.02]"
         >
           <img
             src="/imagens/research-lines.webp"
